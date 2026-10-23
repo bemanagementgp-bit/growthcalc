@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compound Interest Calculator – See How Your Money Grows (Free) | GrowthCalc</title>
+  <meta name="description" content="Free compound interest calculator with monthly contributions, inflation adjustment, interactive growth chart and a yearly or monthly breakdown table. No sign-up required.">
+  <link rel="canonical" href="https://__SITE_URL__/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://__SITE_URL__/">
+  <meta property="og:title" content="Compound Interest Calculator – See How Your Money Grows | GrowthCalc">
+  <meta property="og:description" content="See exactly how your savings compound over time with monthly contributions, inflation adjustment, charts and a year-by-year table. 100% free, runs in your browser.">
+  <meta property="og:image" content="https://__SITE_URL__/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Compound Interest Calculator – GrowthCalc">
+  <meta name="twitter:description" content="Free compound interest calculator with contributions, inflation adjustment, chart and yearly breakdown.">
+  <meta name="twitter:image" content="https://__SITE_URL__/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GrowthCalc – Compound Interest Calculator",
+    "url": "https://__SITE_URL__/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Free compound interest calculator with monthly contributions, inflation adjustment, interactive chart and yearly breakdown table.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": ["Monthly contributions with annual increase", "Daily, monthly, quarterly or annual compounding", "Inflation-adjusted results", "Growth chart", "Yearly and monthly breakdown table", "Shareable links"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is compound interest calculated?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For a lump sum the formula is A = P(1 + r/n)^(nt), where P is the starting amount, r the annual rate as a decimal, n the number of compounding periods per year and t the number of years. GrowthCalc converts your rate to an effective monthly rate, (1 + r/n)^(n/12) − 1, and then simulates every month: it applies that month's interest to the balance and adds your contribution at the start or end of the month. Summing those steps gives the exact result for both the initial deposit and the series of contributions." }
+      },
+      {
+        "@type": "Question",
+        "name": "What interest rate should I use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Use a rate that matches where the money actually sits. A high-yield savings account might pay 3–5%, bonds roughly 4–6%, and a broad stock index fund has historically returned around 10% per year before inflation, or about 7% in real terms, over long periods. Many planners use 6–8% for diversified long-term investing. When in doubt, run a conservative and an optimistic scenario and compare them." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between monthly and annual compounding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "With annual compounding interest is credited once a year; with monthly compounding one twelfth of the annual rate is credited every month and immediately starts earning interest itself. The more often interest compounds, the higher the effective annual yield, but the gap is modest: 7% compounded monthly equals an effective 7.23% per year, and daily compounding gives 7.25%. The length of time invested matters far more than the compounding frequency." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this compound interest calculator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. The calculator, chart, yearly and monthly tables, inflation adjustment, share links and copy summary are completely free with no sign-up. An optional one-time Pro upgrade adds scenario comparison, a goal solver, CSV export and a printable report." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the calculator include taxes or fees?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Results are gross figures before taxes, fund fees, platform charges or trading costs. To approximate their effect, lower the interest rate you enter: for example use 6.5% instead of 7% to account for a 0.5% annual fund fee, or reduce it further for taxes on interest or dividends in a taxable account." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the rule of 72?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The rule of 72 is a mental shortcut for how long money takes to double: divide 72 by the annual interest rate in percent. At 7% that gives roughly 10.3 years; at 10% about 7.2 years. The exact figure is ln(2) ÷ ln(1 + r), which GrowthCalc also shows. The rule is most accurate for rates between roughly 6% and 10%." }
+      }
+    ]
+  }
+  </script>
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="GrowthCalc home"><span class="logo" aria-hidden="true">↗</span><span data-app-name>GrowthCalc</span></a>
+    <nav class="nav" aria-label="Main">
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <h1>Compound Interest Calculator</h1>
+  <p>See how your money grows with monthly contributions, any compounding frequency, inflation adjustment and a year-by-year breakdown. Results update as you type.</p>
+  <div class="badges">
+    <span class="badge">100% free</span>
+    <span class="badge">No sign-up</span>
+    <span class="badge">Works in your browser</span>
+    <span class="badge">8 currencies</span>
+    <span class="badge">Shareable link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Your plan</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Initial investment</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Monthly contribution</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Contribution timing</label>
+            <select id="timing">
+              <option value="end">End of each month</option>
+              <option value="start">Start of each month</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Annual contribution increase (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Raise your contribution each year, e.g. with a pay rise.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Annual interest rate (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Compounding frequency</label>
+            <select id="freq">
+              <option value="daily">Daily</option>
+              <option value="monthly" selected>Monthly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="annually">Annually</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Years to grow</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Years to grow (number)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Years to grow (slider)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – British Pound (£)</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee (₹)</option>
+              <option value="MXN">MXN – Mexican Peso</option>
+              <option value="BRL">BRL – Brazilian Real (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Adjust for inflation</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Expected annual inflation (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Expected annual inflation %. Shows what your balance is worth in today's money.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copy summary</button>
+          <button class="btn" id="btnShare" type="button">🔗 Share link</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Reset</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Compound Interest Report</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Generated <span id="reportDate"></span> · https://__SITE_URL__/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Your results</h2>
+        <p class="k">Final balance <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Total contributions</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Total interest earned</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Interest as % of balance</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Inflation-adjusted balance</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Doubling time (rule of 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Doubling time (exact)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Growth over time</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Compare scenarios <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Save the current inputs as a scenario, then change them to see the difference. Saved scenarios appear as lines on the chart. Free plan: 1 scenario, Pro: up to 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Scenario name (e.g. Aggressive 9%)" maxlength="40" aria-label="Scenario name">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Save scenario</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Scenario</th><th class="num">Initial</th><th class="num">Monthly</th><th class="num">Rate</th><th class="num">Years</th><th class="num">Contributed</th><th class="num">Interest</th><th class="num">Final balance</th><th class="num">vs current</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Goal calculator <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“I want to reach X by year Y – what monthly contribution do I need?” Uses your initial investment, rate, compounding and contribution settings above.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Target amount</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Target year (years from now)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Solve monthly contribution</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Yearly breakdown</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Table granularity">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Yearly</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Monthly</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Print report <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Compare up to 3 scenarios side by side</li>
+          <li>Goal calculator: solve the monthly amount you need</li>
+          <li>CSV export of yearly &amp; monthly tables</li>
+          <li>Printable PDF report</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span> one-time</button>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Put compounding to work</h2>
+  <p class="hint">Partner links – we may earn a commission if you open an account, at no extra cost to you. This is not a recommendation to invest.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<section class="content container">
+  <div class="features">
+    <div class="feature"><div class="ic">📈</div><h3>Live growth chart</h3><p>Stacked bars show what you put in versus what compounding earned, year by year.</p></div>
+    <div class="feature"><div class="ic">🗓️</div><h3>Yearly &amp; monthly tables</h3><p>Starting balance, contributions, interest and ending balance for every period.</p></div>
+    <div class="feature"><div class="ic">💸</div><h3>Inflation aware</h3><p>Toggle inflation to see what your future balance is worth in today's money.</p></div>
+    <div class="feature"><div class="ic">🔗</div><h3>Share &amp; save</h3><p>Inputs are saved in your browser and can be shared with a single link.</p></div>
+  </div>
+
+  <h2>What is compound interest?</h2>
+  <p>Compound interest is interest earned on interest. With simple interest you earn a return only on the money you deposited; with compounding, each interest payment is added to your balance and starts earning its own return. In the first few years the difference looks small, but because the growth is exponential it accelerates: at 7% a year, a balance doubles roughly every ten years, so $10,000 becomes about $20,000 after 10 years, $40,000 after 20 and $76,000 after 30 – without adding a cent.</p>
+
+  <h2>How this compound interest calculator works</h2>
+  <p>For a single lump sum the classic formula is <strong>A = P(1 + r/n)<sup>nt</sup></strong>, where <em>P</em> is the initial investment, <em>r</em> the annual interest rate as a decimal (7% = 0.07), <em>n</em> the number of compounding periods per year (365 daily, 12 monthly, 4 quarterly, 1 annually) and <em>t</em> the number of years. Dividing the rate by <em>n</em> and compounding <em>n·t</em> times is what turns a nominal 7% into an effective 7.23% when compounded monthly.</p>
+  <p>Regular contributions are a <em>series</em> of deposits, each compounding for a different length of time. Rather than relying on a closed-form annuity formula that only works when contributions and compounding share the same schedule, GrowthCalc simulates the account month by month:</p>
+  <ol>
+    <li>Convert the nominal rate to an <strong>effective monthly rate</strong>: r<sub>m</sub> = (1 + r/n)<sup>n/12</sup> − 1. This exactly matches the lump-sum formula above for any compounding frequency.</li>
+    <li>Each month, apply that rate to the running balance to get the month's interest.</li>
+    <li>Add your monthly contribution either <em>before</em> interest is calculated (start of month) or <em>after</em> (end of month).</li>
+    <li>If you set an annual contribution increase, the monthly amount grows by that percentage at the start of each new year.</li>
+  </ol>
+  <p>Summing those steps for every month gives the final balance, the total you contributed and the total interest earned, plus the figures in the yearly and monthly tables. The inflation toggle divides the future balance by (1 + inflation)<sup>t</sup> to express it in today's purchasing power.</p>
+
+  <h2>Why starting early matters so much</h2>
+  <p>Time is the most powerful input in the formula. Imagine two people who both invest $300 a month at 7% until age 65. The one who starts at 25 contributes $144,000 over 40 years and ends with about <strong>$787,000</strong>. The one who starts at 35 contributes $108,000 over 30 years and ends with about <strong>$366,000</strong>. Waiting ten years cost only $36,000 in contributions but more than $420,000 in final balance – the lost decade was the one where the earliest deposits would have compounded the longest. Try it with the years slider: the final decade of any plan typically produces more growth than the first two combined.</p>
+
+  <h2>How much does compounding frequency matter?</h2>
+  <p>Less than most people expect. At a 7% nominal rate the effective annual yield is 7.00% with annual compounding, 7.12% quarterly, 7.23% monthly and 7.25% daily. On $10,000 over 20 years that is the difference between $38,697 (annual) and $40,547 (daily) – worth knowing when comparing savings accounts, but tiny compared with the effect of contributing more or starting a few years earlier. Switch the frequency dropdown to see the gap for your own numbers.</p>
+
+  <h2>What return should you assume?</h2>
+  <p>Match the rate to the asset. High-yield savings accounts and money-market funds have paid roughly 3–5% in recent years. Investment-grade bonds have historically returned around 4–6%. A broad, diversified stock index has returned close to 10% per year on average over the last century before inflation, or about <strong>7% in real (inflation-adjusted) terms</strong> – which is why 7% is such a common default. Real returns in any given decade vary enormously, however, so it is sensible to run a cautious scenario (say 5%) alongside an optimistic one (9%) and plan around the range rather than a single number. Fees and taxes also reduce your effective return; the simplest way to account for them is to lower the rate you enter.</p>
+
+  <h2>Don't forget inflation</h2>
+  <p>A million dollars in 30 years will not buy what a million buys today. At 3% inflation, prices roughly double every 24 years, so $1,000,000 in 2055 has the purchasing power of about $410,000 now. Turn on the inflation toggle to see every balance “in today's money”. If you want to think purely in real terms, you can instead enter a real return (nominal return minus inflation, e.g. 7% instead of 10%) and leave the toggle off.</p>
+
+  <h2>Who is this calculator for?</h2>
+  <ul>
+    <li><strong>Savers</strong> comparing high-yield accounts or certificates of deposit with different compounding schedules.</li>
+    <li><strong>Long-term investors</strong> estimating what a monthly index-fund contribution could grow into for retirement, a home deposit or a child's education.</li>
+    <li><strong>Students and teachers</strong> exploring exponential growth, the rule of 72 and the time value of money with real numbers.</li>
+    <li><strong>Anyone</strong> deciding whether to increase contributions now or later – the “annual contribution increase” field models a plan that grows with your income.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details>
+      <summary>How is compound interest calculated?</summary>
+      <p>For a lump sum the formula is A = P(1 + r/n)<sup>nt</sup>, where P is the starting amount, r the annual rate as a decimal, n the number of compounding periods per year and t the number of years. GrowthCalc converts your rate to an effective monthly rate, (1 + r/n)<sup>n/12</sup> − 1, and then simulates every month: it applies that month's interest to the balance and adds your contribution at the start or end of the month. Summing those steps gives the exact result for both the initial deposit and the series of contributions.</p>
+    </details>
+    <details>
+      <summary>What interest rate should I use?</summary>
+      <p>Use a rate that matches where the money actually sits. A high-yield savings account might pay 3–5%, bonds roughly 4–6%, and a broad stock index fund has historically returned around 10% per year before inflation, or about 7% in real terms, over long periods. Many planners use 6–8% for diversified long-term investing. When in doubt, run a conservative and an optimistic scenario and compare them.</p>
+    </details>
+    <details>
+      <summary>What is the difference between monthly and annual compounding?</summary>
+      <p>With annual compounding interest is credited once a year; with monthly compounding one twelfth of the annual rate is credited every month and immediately starts earning interest itself. The more often interest compounds, the higher the effective annual yield, but the gap is modest: 7% compounded monthly equals an effective 7.23% per year, and daily compounding gives 7.25%. The length of time invested matters far more than the compounding frequency.</p>
+    </details>
+    <details>
+      <summary>Is this compound interest calculator free?</summary>
+      <p>Yes. The calculator, chart, yearly and monthly tables, inflation adjustment, share links and copy summary are completely free with no sign-up. An optional one-time Pro upgrade adds scenario comparison, a goal solver, CSV export and a printable report.</p>
+    </details>
+    <details>
+      <summary>Does the calculator include taxes or fees?</summary>
+      <p>No. Results are gross figures before taxes, fund fees, platform charges or trading costs. To approximate their effect, lower the interest rate you enter: for example use 6.5% instead of 7% to account for a 0.5% annual fund fee, or reduce it further for taxes on interest or dividends in a taxable account.</p>
+    </details>
+    <details>
+      <summary>What is the rule of 72?</summary>
+      <p>The rule of 72 is a mental shortcut for how long money takes to double: divide 72 by the annual interest rate in percent. At 7% that gives roughly 10.3 years; at 10% about 7.2 years. The exact figure is ln(2) ÷ ln(1 + r), which GrowthCalc also shows. The rule is most accurate for rates between roughly 6% and 10%.</p>
+    </details>
+  </div>
+
+  <p class="disclaimer"><strong>Disclaimer:</strong> GrowthCalc is an educational tool. Projections assume a constant rate of return and do not account for taxes, fees, market volatility or changes in contribution. Nothing on this site is financial, investment or tax advice; consult a licensed professional before making decisions.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>© <span data-year></span> <span data-app-name>GrowthCalc</span> · Not financial advice. For education only.</div>
+    <div><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · Made with ❤️ for savers everywhere</div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to GrowthCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Compare up to 3 scenarios on one chart</li>
+      <li>Goal calculator – solve the monthly contribution you need</li>
+      <li>CSV export of yearly and monthly tables</li>
+      <li>Printable PDF report</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

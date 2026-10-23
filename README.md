@@ -2,7 +2,7 @@
 
 Free, static compound interest calculator. Pure HTML/CSS/JS – no build step, no dependencies. Deployed as-is to Vercel.
 
-**Live URL:** https://__SITE_URL__/ (placeholder – replaced after first deploy)
+**Live URL:** https://growthcalc-tool.vercel.app/ (placeholder – replaced after first deploy)
 
 ## Features
 
@@ -40,7 +40,7 @@ All switches live in `config.js`:
 3. **Google Analytics** – set `GA_ID` (`G-XXXXXXX`). Events tracked: `copy`, `share`, `download` (csv/print), `scenario_save`, `goal_solve`, `pro_click`, `begin_checkout`, `affiliate_click`.
 4. **Affiliate brokers** – fill `AFFILIATE_LINKS.broker1 / broker2` with `{ name, url }`. Partner cards render below the tool only when `url` is non-empty; the whole section stays hidden otherwise. Links use `rel="sponsored noopener"`.
 
-After the first deploy, replace the `__SITE_URL__` placeholder in `index.html`, `privacy.html`, `terms.html`, `robots.txt`, `sitemap.xml` and `config.js` with the real domain (e.g. `sed -i 's/__SITE_URL__/growthcalc.app/g' *.html *.txt *.xml *.js`).
+After the first deploy, replace the `growthcalc-tool.vercel.app` placeholder in `index.html`, `privacy.html`, `terms.html`, `robots.txt`, `sitemap.xml` and `config.js` with the real domain (e.g. `sed -i 's/growthcalc-tool.vercel.app/growthcalc.app/g' *.html *.txt *.xml *.js`).
 
 ## Files
 

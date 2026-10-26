@@ -298,7 +298,7 @@
     chartGeom = { W, H, padL, padT, plotW, plotH, slot, totalYears };
 
     // legend
-    let legend = '<span class="lg"><i style="background:var(--accent2)"></i>Contributions</span><span class="lg"><i style="background:var(--accent)"></i>Interest</span>';
+    let legend = '<span class="lg"><i style="background:var(--muted)"></i>Contributions</span><span class="lg"><i style="background:var(--accent)"></i>Interest</span>';
     scen.forEach((s, k) => {
       legend += '<span class="lg"><i class="line" style="background:' + SCENARIO_COLORS[k % SCENARIO_COLORS.length] + '"></i>' + esc(s.name) + '</span>';
     });

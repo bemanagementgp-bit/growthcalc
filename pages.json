@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "compound-interest-calculator-for-retirement",
+    "keyword": "compound interest calculator for retirement",
+    "title": "Compound Interest Calculator for Retirement – Monthly Contributions | GrowthCalc",
+    "description": "Free retirement compound interest calculator. See how monthly contributions grow over 30 years, how much is interest, and the balance adjusted for inflation.",
+    "eyebrow": "Investing · Retirement",
+    "h1": "Compound Interest Calculator for Retirement",
+    "tagline": "Project a retirement balance from your current savings and monthly contributions, year by year, with an inflation-adjusted view of what it will really buy.",
+    "intro": "<p>Retirement maths is simple and unforgiving: the money you add in your twenties and thirties does most of the work, and the money you add in your fifties mostly just sits there. A compound interest calculator makes that visible before it is too late to act on it.</p><p>This page preloads GrowthCalc with a typical starting point: $25,000 already saved, $600 a month added, a 7 percent annual return compounded monthly over 30 years, and inflation switched on at 3 percent so you also see the balance in today's money. Change any figure and the chart and table update instantly in your browser.</p>",
+    "sections": [
+      {
+        "h2": "Reading the result like a planner would",
+        "html": "<p>Three numbers matter more than the headline balance:</p><ul><li><strong>Total contributions vs interest.</strong> With the preset, roughly a quarter of the final balance is money you put in and three quarters is growth. That ratio is the reward for starting early; shorten the horizon to 15 years and it flips.</li><li><strong>The inflation-adjusted balance.</strong> A million dollars in 30 years buys what about $410,000 buys today at 3 percent inflation. Plan withdrawals against the adjusted figure.</li><li><strong>The yearly table.</strong> Find the year where annual interest first exceeds your annual contributions. From that point the portfolio is doing more than you are.</li></ul>"
+      },
+      {
+        "h2": "Which return and inflation rates to use",
+        "html": "<p>Long-run returns for a diversified stock portfolio have averaged around 10 percent a year before inflation in the US and closer to 7 percent after it, but with large swings between decades. A conservative plan uses 5 to 6 percent nominal with inflation on, or 4 percent real with inflation off. Run both: the gap between them is your margin of safety.</p><p>Remember that taxes and fees are not modelled. A 1 percent annual fee over 30 years removes roughly a fifth of the final balance, which is why low-cost index funds are the default recommendation in most retirement guides. This calculator is for education and planning, not personal financial advice.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much do I need to save monthly for retirement?",
+        "a": "Switch GrowthCalc Pro's goal mode on, enter your target balance and horizon, and it solves for the monthly contribution. As a rough rule, saving 15 percent of income from your mid-twenties funds a conventional retirement at a 7 percent return."
+      },
+      {
+        "q": "Should I use the inflation-adjusted figure?",
+        "a": "Yes, for deciding whether the plan is enough. Use the nominal figure only to compare against account statements."
+      },
+      {
+        "q": "What return should I assume for a 401(k) or pension?",
+        "a": "Most planners use 5 to 7 percent nominal for a balanced portfolio. Test a lower figure too; a plan that only works at 10 percent is not a plan."
+      },
+      {
+        "q": "Does the calculator include taxes or employer matching?",
+        "a": "No. Add an employer match to your monthly contribution manually, and remember withdrawals from pre-tax accounts are taxed."
+      }
+    ],
+    "query": "p=25000&m=600&t=end&r=7&f=monthly&y=30&g=0&c=USD&i=1&ir=3"
+  },
+  {
+    "slug": "roth-ira-growth-calculator",
+    "keyword": "roth ira growth calculator",
+    "title": "Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc",
+    "description": "Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.",
+    "eyebrow": "Investing · Roth IRA",
+    "h1": "Roth IRA Growth Calculator",
+    "tagline": "Estimate how a Roth IRA grows when you contribute the annual maximum, and how much of the final balance is tax-free growth rather than your own deposits.",
+    "intro": "<p>A Roth IRA is funded with money you have already paid tax on, and in exchange the growth comes out tax-free in retirement. That makes it the account where compound interest is worth the most, because every dollar of interest in the final balance is a dollar you keep.</p><p>The preset spreads the 2025 contribution limit of $7,000 across the year as $583 a month, starts from a $5,000 balance, assumes a 7 percent return compounded monthly over 35 years, and switches on a 3 percent inflation view. Adjust the monthly figure if you are over 50 and eligible for the catch-up contribution.</p>",
+    "sections": [
+      {
+        "h2": "Why contribution timing changes the result",
+        "html": "<p>Contributions can be made any time until the tax filing deadline, which tempts people to fund the account in a lump sum each April. Money invested earlier compounds longer, so contributing in January or monthly from January usually beats a last-minute April deposit by a few percent over a career. Switch the contribution timing between \"start\" and \"end\" of the month to see the small but real difference; the gap between January and April funding is larger still.</p><ul><li>Limits change most years; check the current figure before setting the monthly amount.</li><li>Income limits apply to direct Roth contributions; the backdoor route exists for high earners.</li><li>Contributions (not growth) can be withdrawn at any time without penalty, which makes a Roth a reasonable second emergency fund.</li></ul>"
+      },
+      {
+        "h2": "Reading the contributions vs growth split",
+        "html": "<p>With the preset values, total contributions over 35 years are about $250,000 and the final balance is several times that. The difference is tax-free growth, the single biggest argument for starting a Roth in your twenties even with small amounts. Use the yearly table to spot the crossover year when annual growth overtakes your annual contribution.</p><p>Returns are not guaranteed and this is not financial advice. Use the scenario comparison in GrowthCalc Pro to run 5, 7 and 9 percent side by side and plan for the lower one.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much will a Roth IRA be worth in 30 years?",
+        "a": "Maxing a $7,000 annual contribution at a 7 percent return grows to roughly $700,000 in 30 years, of which about $210,000 is contributions. Change the inputs above to match your own start date and return assumption."
+      },
+      {
+        "q": "Should I contribute monthly or once a year?",
+        "a": "Monthly from January, or a lump sum as early in the year as you can afford. Both beat waiting until the deadline because the money compounds longer."
+      },
+      {
+        "q": "Is Roth growth really tax-free?",
+        "a": "Qualified withdrawals after 59½ and once the account is five years old are federal-tax-free. Rules can change; this calculator does not model taxes."
+      },
+      {
+        "q": "Can I model the catch-up contribution after 50?",
+        "a": "Yes. Save the current plan as a scenario, then raise the monthly amount for the later years in a second scenario using the contribution increase field."
+      }
+    ],
+    "query": "p=5000&m=583&t=start&r=7&f=monthly&y=35&g=0&c=USD&i=1&ir=3"
+  },
+  {
+    "slug": "house-down-payment-savings-calculator",
+    "keyword": "house down payment savings calculator",
+    "title": "House Down Payment Savings Calculator – Reach Your Goal by Year X | GrowthCalc",
+    "description": "Free down payment savings calculator. See how monthly savings plus interest reach a house deposit, how long it takes, and what return suits a 3 to 7 year goal.",
+    "eyebrow": "Saving · Home buying",
+    "h1": "House Down Payment Savings Calculator",
+    "tagline": "Work out how fast monthly savings plus interest get you to a house down payment, using the lower returns that suit a short-term goal.",
+    "intro": "<p>Saving for a deposit is a short race, not a marathon, and that changes the rules. Money you need within five years should not ride the stock market, because a 30 percent drop the year you want to buy cannot be waited out. The right benchmark is a high-yield savings account or short-term bonds, so the return you type here should be modest.</p><p>The preset assumes $15,000 already saved, $1,200 a month added, a 4.5 percent yield compounded monthly, and a five-year horizon. On those numbers the balance comes to just under $100,000 by the end of year five, close to a 20 percent deposit on a $500,000 home; adjust the figures to your market.</p>",
+    "sections": [
+      {
+        "h2": "How much deposit, and when",
+        "html": "<p>Set your target first. A 20 percent deposit avoids mortgage insurance in the US and gets better rates in most countries, but 5 to 10 percent programmes exist and may get you in sooner, at a higher monthly cost. Add closing costs (typically 2 to 5 percent of the price) and a cushion for moving and repairs; the deposit is rarely the whole bill.</p><ul><li>Use the yearly table to see the first year your balance clears the target.</li><li>Try a 3 percent return as a stress test: if the plan only works at 5 percent, it depends on rates staying high.</li><li>GrowthCalc Pro's goal mode solves the reverse question: the monthly saving needed to hit a target by a given year.</li></ul>"
+      },
+      {
+        "h2": "Where to keep a down payment fund",
+        "html": "<p>For a two-to-five-year horizon the usual options are a high-yield savings account, a money market fund, a CD or bond ladder matched to your buying date, or a government savings scheme if your country has one for first-time buyers (several add a bonus or tax relief that beats any interest rate). Keep the money separate from your everyday account so it is not spent, and automate the monthly transfer the day after payday.</p><p>Interest on savings is usually taxable, so the after-tax yield is a little lower than the number on the bank's website. This page is educational, not personal financial advice.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How long will it take to save a $60,000 down payment?",
+        "a": "Saving $1,200 a month at 4.5 percent from zero takes a little under four years; starting with $15,000 already saved shortens it to about three. Enter your own figures to see the exact year in the table."
+      },
+      {
+        "q": "Should I invest my down payment in stocks?",
+        "a": "Generally not for money needed within five years. Short-term goals suit savings accounts and short bonds, where the return is lower but the balance is predictable."
+      },
+      {
+        "q": "Does the calculator account for rising house prices?",
+        "a": "Not directly. Switch inflation on and set it to your local house price growth to see your balance in terms of today's prices."
+      },
+      {
+        "q": "Can I include a one-off bonus or gift?",
+        "a": "Add it to the initial investment, or save the plan as a scenario and create a second one with the higher starting balance to compare."
+      }
+    ],
+    "query": "p=15000&m=1200&t=end&r=4.5&f=monthly&y=5&g=0&c=USD&i=0&ir=3"
+  },
+  {
+    "slug": "college-savings-calculator",
+    "keyword": "college savings calculator",
+    "title": "College Savings Calculator – How Much to Save Per Month for Tuition | GrowthCalc",
+    "description": "Free college savings calculator. Project a 529 or education fund from birth to 18 with monthly deposits, compound growth and tuition inflation, year by year.",
+    "eyebrow": "Saving · Education",
+    "h1": "College Savings Calculator",
+    "tagline": "Estimate how monthly savings from a child's birth grow by age 18, with tuition inflation switched on so the result is measured against future costs.",
+    "intro": "<p>Education costs have risen faster than general inflation for decades, which makes college savings the one goal where the inflation toggle matters most. A fund that looks enormous in today's dollars may cover half a degree in 18 years' time.</p><p>The preset starts at birth with $2,000, adds $300 a month, assumes a 6 percent return compounded monthly (a typical age-based 529 portfolio that gets more conservative as college approaches) over 18 years, and sets inflation to 5 percent to approximate tuition growth. The \"in today's money\" line tells you what the balance will buy in education terms.</p>",
+    "sections": [
+      {
+        "h2": "Setting a realistic target",
+        "html": "<p>Decide what share of costs you intend to cover: many families aim for one third from savings, one third from income at the time, and one third from aid and loans. Then price the target: four years at an in-state public university currently runs around $100,000 to $120,000 including room and board, private universities two to three times that. Grow that number by tuition inflation to the year your child starts and compare it with the nominal balance in the table.</p><ul><li>Front-load if you can: the first five years of contributions do the most compounding.</li><li>Use the contribution increase field (for example 3 percent a year) to mirror salary growth.</li><li>Grandparent contributions can go straight into the initial amount or a second scenario.</li></ul>"
+      },
+      {
+        "h2": "Return assumptions change with age",
+        "html": "<p>Age-based portfolios start equity-heavy and shift to bonds and cash in the teenage years, so a single return figure over 18 years is a simplification. Six percent is a reasonable blended average; run 4 and 8 percent as well to see the range. GrowthCalc Pro's scenario comparison puts all three on one chart.</p><p>Tax treatment of education accounts varies by country and state (529 plans in the US, Junior ISAs in the UK, RESPs in Canada) and is not modelled here. This page is for planning and education, not personal financial advice.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much should I save per month for college?",
+        "a": "Saving $300 a month from birth at 6 percent gives roughly $115,000 at 18. Use GrowthCalc Pro's goal mode with your own target and start age to get the exact monthly figure."
+      },
+      {
+        "q": "What inflation rate should I use for tuition?",
+        "a": "Tuition has historically grown 4 to 6 percent a year in the US, above general inflation. Five percent is a common planning assumption."
+      },
+      {
+        "q": "Is it too late to start if my child is 10?",
+        "a": "No, but the mix changes: with eight years left, contributions matter more than growth, and the portfolio should be more conservative. Set years to 8 and compare the contributions and interest columns."
+      },
+      {
+        "q": "Does the calculator handle lump sums later on?",
+        "a": "Not as one-off events. Approximate them by raising the initial amount or by saving a second scenario from the year the lump sum arrives."
+      }
+    ],
+    "query": "p=2000&m=300&t=end&r=6&f=monthly&y=18&g=3&c=USD&i=1&ir=5"
+  },
+  {
+    "slug": "how-much-will-10000-grow-in-10-years",
+    "keyword": "how much will $10,000 grow in 10 years",
+    "title": "How Much Will $10,000 Grow in 10 Years? Compound Interest Calculator | GrowthCalc",
+    "description": "See how much $10,000 grows in 10 years at 4%, 7% or 10% with compound interest, with and without monthly contributions, in a free interactive calculator.",
+    "eyebrow": "Investing · Lump sum growth",
+    "h1": "How Much Will $10,000 Grow in 10 Years?",
+    "tagline": "Calculate what a $10,000 lump sum becomes after 10 years at any interest rate and compounding frequency, with an optional monthly top-up.",
+    "intro": "<p>Ten thousand dollars left alone for ten years at 7 percent becomes about $20,100: it roughly doubles, which is the rule of 72 in action (72 ÷ 7 ≈ 10 years). At 4 percent it reaches about $14,900; at 10 percent, about $27,100. The gap between those outcomes is entirely the rate, which is why people argue about expected returns so much.</p><p>The preset below runs the pure lump-sum case: $10,000, no monthly contributions, 7 percent compounded monthly for 10 years. Add even $100 a month and the end balance jumps by more than $17,000, which is the second lesson of the page.</p>",
+    "sections": [
+      {
+        "h2": "The numbers at common rates",
+        "html": "<p>With monthly compounding and no further deposits, $10,000 after ten years becomes approximately:</p><ul><li><strong>2 percent</strong> (a typical savings account in a low-rate decade): about $12,200.</li><li><strong>4.5 percent</strong> (high-yield savings or short bonds): about $15,700.</li><li><strong>7 percent</strong> (a long-run real-ish stock market assumption): about $20,100.</li><li><strong>10 percent</strong> (long-run nominal stock market average, with large yearly swings): about $27,100.</li></ul><p>Switch the compounding frequency to daily or annually and you will see the difference is small, a few tens of dollars at these rates. The rate and the time matter; the compounding schedule barely does.</p>"
+      },
+      {
+        "h2": "What the chart does not show",
+        "html": "<p>Markets do not deliver 7 percent every year; they deliver −20 percent, +25 percent and +8 percent in some order that averages out over long periods. A ten-year window can still finish below average, which is why ten years is usually treated as the minimum horizon for stock investments and why switching inflation on (3 percent is the usual assumption) gives a more honest picture of purchasing power.</p><p>Fees and taxes are also outside the model. For planning, compare a low and a high scenario side by side (GrowthCalc Pro) rather than relying on one number. Not financial advice.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much is $10,000 worth after 10 years at 7 percent?",
+        "a": "About $20,100 with monthly compounding, or $19,700 with annual compounding. The exact figure is shown above and in the year-by-year table."
+      },
+      {
+        "q": "What if I add $100 a month?",
+        "a": "Set the monthly contribution to 100: the balance after ten years rises to roughly $37,400, of which $22,000 is money you deposited."
+      },
+      {
+        "q": "Does daily compounding make a big difference?",
+        "a": "No. At 7 percent, daily versus monthly compounding adds roughly $40 over ten years on $10,000. Rate and time dominate."
+      },
+      {
+        "q": "Is 7 percent a safe assumption?",
+        "a": "It is a common long-run average for a diversified stock portfolio after inflation, not a promise. Run 4 and 10 percent too to see the realistic range."
+      }
+    ],
+    "query": "p=10000&m=0&t=end&r=7&f=monthly&y=10&g=0&c=USD&i=0&ir=3"
+  },
+  {
+    "slug": "daily-compound-interest-calculator",
+    "keyword": "daily compound interest calculator",
+    "title": "Daily Compound Interest Calculator – Daily vs Monthly vs Yearly | GrowthCalc",
+    "description": "Free daily compound interest calculator. Compare daily, monthly, quarterly and annual compounding on savings and see the real difference in dollars over time.",
+    "eyebrow": "Saving · Compounding frequency",
+    "h1": "Daily Compound Interest Calculator",
+    "tagline": "Calculate growth with daily compounding and compare it against monthly and annual compounding to see how much the frequency really adds.",
+    "intro": "<p>Banks like to advertise daily compounding because it sounds like more interest, and technically it is. The question is how much more. For a savings account at 4.5 percent, the difference between daily and monthly compounding on $20,000 over five years is a few dollars. The difference between 4.5 percent and 4.0 percent is a few hundred.</p><p>The preset sets GrowthCalc to daily compounding at 4.5 percent on a $20,000 balance with $250 added monthly over five years, a typical high-yield savings setup. Change the frequency select to monthly or annually and watch the final balance; the gap is smaller than most people expect.</p>",
+    "sections": [
+      {
+        "h2": "How daily compounding is calculated",
+        "html": "<p>With daily compounding, the bank divides the annual rate by 365, applies that fraction every day, and the next day's interest is calculated on the slightly larger balance. The effective annual yield (APY) is (1 + r/365)<sup>365</sup> − 1. At a 4.5 percent nominal rate that is 4.60 percent APY; monthly compounding gives 4.59 percent; annual compounding gives exactly 4.50 percent. GrowthCalc simulates month by month using the effective monthly rate for the frequency you choose, so contributions are added every month regardless of how often interest is credited.</p><ul><li>Compare APY, not nominal rates, when choosing an account.</li><li>A rate 0.25 points higher beats any compounding frequency advantage.</li><li>Interest is typically taxable in the year it is credited.</li></ul>"
+      },
+      {
+        "h2": "When frequency does matter",
+        "html": "<p>Compounding frequency becomes meaningful when rates are high or balances are large: on $500,000 at 8 percent, daily versus annual compounding differs by about $1,600 a year. It also matters in reverse on debt. Credit cards usually compound daily, which is part of why balances grow faster than the headline APR suggests; the same calculator logic applies, just with you on the wrong side of it.</p><p>For most savers the practical advice is simple: pick the highest APY with no fees, automate contributions, and let time do the compounding. Not financial advice; rates shown are examples, not offers.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is daily compounding better than monthly?",
+        "a": "Slightly. At typical savings rates the difference is a few hundredths of a percent in APY, which on a $20,000 balance is a few dollars a year."
+      },
+      {
+        "q": "How do I convert a nominal rate to APY?",
+        "a": "APY = (1 + r/n)^n − 1, where n is the number of compounding periods per year. Enter the nominal rate here and pick the frequency; the final balance reflects the APY."
+      },
+      {
+        "q": "Does the calculator compound contributions daily too?",
+        "a": "Contributions are added monthly and then earn interest at the chosen frequency from that point on, which matches how most accounts work."
+      },
+      {
+        "q": "Can I see the difference between frequencies side by side?",
+        "a": "Yes with GrowthCalc Pro: save the daily version as a scenario, switch to annual, and compare both on the chart and in the table."
+      }
+    ],
+    "query": "p=20000&m=250&t=end&r=4.5&f=daily&y=5&g=0&c=USD&i=0&ir=3"
+  },
+  {
+    "slug": "compound-interest-calculator-with-monthly-contributions",
+    "keyword": "compound interest calculator with monthly contributions",
+    "title": "Compound Interest Calculator with Monthly Contributions | GrowthCalc",
+    "description": "Free compound interest calculator with monthly contributions. See how regular deposits plus compounding grow over time, with a chart and a year-by-year table.",
+    "eyebrow": "Investing · Regular deposits",
+    "h1": "Compound Interest Calculator with Monthly Contributions",
+    "tagline": "Model an investment that you top up every month and see how much of the final balance comes from deposits versus compound growth.",
+    "intro": "<p>Most real saving is not a single lump sum left alone; it is a direct debit on payday. That changes the maths: the formula for a growing series of deposits is messier than A = P(1 + r/n)<sup>nt</sup>, which is why spreadsheets and calculators exist. It also changes the outcome, because each deposit gets its own compounding runway.</p><p>The preset is a plain, realistic case: nothing saved yet, $400 a month, 7 percent compounded monthly, 25 years. The result is a balance well over $300,000 from $120,000 of deposits. Change the monthly amount to see how linear the deposits are and how non-linear the growth is.</p>",
+    "sections": [
+      {
+        "h2": "How monthly contributions are modelled",
+        "html": "<p>GrowthCalc simulates the account month by month. Each month it adds your contribution (at the start or end of the month, your choice) and applies the effective monthly rate for the compounding frequency you selected. That is the same approach a bank or brokerage statement follows, and it makes the year-by-year table exact rather than an approximation. The \"annual contribution increase\" field raises the monthly deposit each year, useful for mirroring pay rises or a plan to save more as debts are cleared.</p><ul><li><strong>Start vs end of month:</strong> contributing at the start earns one extra month of interest on every deposit; over 25 years it adds about half a percent to the balance.</li><li><strong>Contribution increase:</strong> 3 percent a year roughly keeps your saving rate constant in real terms.</li></ul>"
+      },
+      {
+        "h2": "Why the deposit amount beats the return early on",
+        "html": "<p>In the first decade, your balance is mostly deposits; a higher monthly amount matters far more than a slightly higher return. In the last decade, the reverse is true: growth on the accumulated balance dwarfs new deposits, which is when fees and asset allocation deserve attention. The crossover is visible in the table as the year interest earned first exceeds contributions made.</p><p>Practical takeaway: automate the deposit, increase it with every pay rise, and do not interrupt it in a downturn, because the deposits made at low prices are the ones that compound the most. Educational content, not personalised advice.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the formula for compound interest with monthly contributions?",
+        "a": "Future value = P(1+i)^n + PMT × [((1+i)^n − 1) / i], where i is the periodic rate and n the number of periods, adjusted for start-of-period deposits. The calculator simulates it period by period so frequencies and increases are handled exactly."
+      },
+      {
+        "q": "How much will $400 a month grow to in 25 years?",
+        "a": "At 7 percent compounded monthly, about $324,000 from $120,000 of deposits. The exact figure and the yearly path are shown above."
+      },
+      {
+        "q": "Should I contribute at the start or end of the month?",
+        "a": "Start, if cash flow allows; each deposit earns one more month of interest. The difference is small per month but real over decades."
+      },
+      {
+        "q": "Can I export the monthly table?",
+        "a": "Yes. Switch the table to monthly and use the CSV export in GrowthCalc Pro, or copy the summary for free."
+      }
+    ],
+    "query": "p=0&m=400&t=end&r=7&f=monthly&y=25&g=0&c=USD&i=0&ir=3"
+  },
+  {
+    "slug": "high-yield-savings-account-calculator",
+    "keyword": "high yield savings account calculator",
+    "title": "High-Yield Savings Account Calculator – Interest Earned Over Time | GrowthCalc",
+    "description": "Free high-yield savings calculator. Estimate interest earned at your APY with monthly deposits, compare it with a standard account and see the inflation effect.",
+    "eyebrow": "Saving · High-yield accounts",
+    "h1": "High-Yield Savings Account Calculator",
+    "tagline": "Estimate how much interest a high-yield savings account earns on your balance and monthly deposits, and how much more it pays than a standard account.",
+    "intro": "<p>The difference between a standard savings account paying 0.5 percent and a high-yield account paying 4.5 percent is not a rounding error. On a $30,000 emergency fund it is more than $1,200 a year, for the same risk and the same insurance cover. A calculator turns that abstract percentage into a number you can act on.</p><p>The preset models a $30,000 balance, $200 added monthly, 4.5 percent compounded daily (how most online banks credit interest) over three years, with inflation switched on at 3 percent so you can see whether the account is actually preserving purchasing power. Replace 4.5 with the APY you are being offered.</p>",
+    "sections": [
+      {
+        "h2": "Comparing accounts properly",
+        "html": "<p>Enter the APY, not the nominal rate, because APY already includes the compounding effect and is what banks must disclose. Then check three things the rate does not tell you:</p><ul><li><strong>Teaser periods.</strong> Some accounts pay a high rate for three to six months and drop after. Model that as two scenarios, or use the lower rate for the whole period.</li><li><strong>Balance caps and tiers.</strong> A great rate on the first $5,000 and a poor one above it is a poor account for a $30,000 fund.</li><li><strong>Access and limits.</strong> Emergency money needs same-day or next-day access; notice accounts and CDs pay more for giving that up.</li></ul><p>Run the same deposit plan at 0.5 percent and at the high-yield rate; the gap in the final balance is the annual cost of not switching.</p>"
+      },
+      {
+        "h2": "Inflation and taxes on savings interest",
+        "html": "<p>With inflation switched on, the calculator shows the balance in today's money. If the APY is below inflation, that line falls even as the nominal balance rises, which is the honest picture of a savings account in a high-inflation year. Interest is also usually taxable as income, so a 4.5 percent APY may be nearer 3.4 percent after tax for a mid-bracket saver.</p><p>None of this makes a high-yield account a bad choice for an emergency fund or a short-term goal; it just means it is a place to keep money safe, not a place to grow wealth over decades. Educational content, not financial advice; rates are illustrative.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much interest does $30,000 earn in a high-yield savings account?",
+        "a": "At 4.5 percent APY, about $1,380 in the first year, more in later years as interest compounds and if you keep depositing. The yearly table above shows the exact path."
+      },
+      {
+        "q": "Is a high-yield savings account worth it for small balances?",
+        "a": "Yes, since switching is free. On $5,000 the difference versus a standard account is around $200 a year, which compounds like everything else."
+      },
+      {
+        "q": "Why does the inflation-adjusted balance grow so slowly?",
+        "a": "Because the real return is the APY minus inflation. At 4.5 percent APY and 3 percent inflation, purchasing power grows about 1.5 percent a year."
+      },
+      {
+        "q": "Can I model a rate drop after the first year?",
+        "a": "Save the first year as a scenario and create a second with the lower rate (GrowthCalc Pro), or simply run the whole period at the lower rate for a conservative estimate."
+      }
+    ],
+    "query": "p=30000&m=200&t=end&r=4.5&f=daily&y=3&g=0&c=USD&i=1&ir=3"
+  }
+]

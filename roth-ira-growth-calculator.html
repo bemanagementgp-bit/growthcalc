@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc</title>
+  <meta name="description" content="Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator">
+  <meta property="og:title" content="Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc">
+  <meta property="og:description" content="Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc">
+  <meta name="twitter:description" content="Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc","description":"Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.","url":"https://growthcalc-tool.vercel.app/roth-ira-growth-calculator","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Roth IRA Growth Calculator","item":"https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much will a Roth IRA be worth in 30 years?","acceptedAnswer":{"@type":"Answer","text":"Maxing a $7,000 annual contribution at a 7 percent return grows to roughly $700,000 in 30 years, of which about $210,000 is contributions. Change the inputs above to match your own start date and return assumption."}},{"@type":"Question","name":"Should I contribute monthly or once a year?","acceptedAnswer":{"@type":"Answer","text":"Monthly from January, or a lump sum as early in the year as you can afford. Both beat waiting until the deadline because the money compounds longer."}},{"@type":"Question","name":"Is Roth growth really tax-free?","acceptedAnswer":{"@type":"Answer","text":"Qualified withdrawals after 59½ and once the account is five years old are federal-tax-free. Rules can change; this calculator does not model taxes."}},{"@type":"Question","name":"Can I model the catch-up contribution after 50?","acceptedAnswer":{"@type":"Answer","text":"Yes. Save the current plan as a scenario, then raise the monthly amount for the later years in a second scenario using the contribution increase field."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="GrowthCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Compound interest calculator</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Investing · Roth IRA</span>
+  <h1>Roth IRA Growth Calculator</h1>
+  <p class="tagline">Estimate how a Roth IRA grows when you contribute the annual maximum, and how much of the final balance is tax-free growth rather than your own deposits.</p>
+  <div class="badges">
+  <span class="badge">100% free</span>
+  <span class="badge">No sign-up</span>
+  <span class="badge">Works in your browser</span>
+  <span class="badge">8 currencies</span>
+  <span class="badge">Shareable link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Your plan</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Initial investment</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Monthly contribution</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Contribution timing</label>
+            <select id="timing">
+              <option value="end">End of each month</option>
+              <option value="start">Start of each month</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Annual contribution increase (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Raise your contribution each year, e.g. with a pay rise.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Annual interest rate (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Compounding frequency</label>
+            <select id="freq">
+              <option value="daily">Daily</option>
+              <option value="monthly" selected>Monthly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="annually">Annually</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Years to grow</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Years to grow (number)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Years to grow (slider)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – British Pound (£)</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee (₹)</option>
+              <option value="MXN">MXN – Mexican Peso</option>
+              <option value="BRL">BRL – Brazilian Real (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Adjust for inflation</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Expected annual inflation (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Expected annual inflation %. Shows what your balance is worth in today's money.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copy summary</button>
+          <button class="btn" id="btnShare" type="button">🔗 Share link</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Reset</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Compound Interest Report</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Generated <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Your results</h2>
+        <p class="k">Final balance <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Total contributions</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Total interest earned</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Interest as % of balance</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Inflation-adjusted balance</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Doubling time (rule of 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Doubling time (exact)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Growth over time</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Compare scenarios <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Save the current inputs as a scenario, then change them to see the difference. Saved scenarios appear as lines on the chart. Free plan: 1 scenario, Pro: up to 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Scenario name (e.g. Aggressive 9%)" maxlength="40" aria-label="Scenario name">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Save scenario</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Scenario</th><th class="num">Initial</th><th class="num">Monthly</th><th class="num">Rate</th><th class="num">Years</th><th class="num">Contributed</th><th class="num">Interest</th><th class="num">Final balance</th><th class="num">vs current</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Goal calculator <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“I want to reach X by year Y – what monthly contribution do I need?” Uses your initial investment, rate, compounding and contribution settings above.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Target amount</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Target year (years from now)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Solve monthly contribution</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Yearly breakdown</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Table granularity">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Yearly</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Monthly</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Print report <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Compare up to 3 scenarios side by side</li>
+          <li>Goal calculator: solve the monthly amount you need</li>
+          <li>CSV export of yearly &amp; monthly tables</li>
+          <li>Printable PDF report</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span> one-time</button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Grow your money, slowly</h3>
+        <p class="hint">Saving and investing basics, calculators and new free tools. Not financial advice.</p>
+        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+          <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="hint tiny">No spam. Unsubscribe anytime.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Put compounding to work</h2>
+  <p class="hint">Partner links – we may earn a commission if you open an account, at no extra cost to you. This is not a recommendation to invest.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">More ways to use GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/compound-interest-calculator-for-retirement">Compound Interest Calculator for Retirement</a></li>
+      <li><a href="/roth-ira-growth-calculator" class="current" aria-current="page">Roth IRA Growth Calculator</a></li>
+      <li><a href="/house-down-payment-savings-calculator">House Down Payment Savings Calculator</a></li>
+      <li><a href="/college-savings-calculator">College Savings Calculator</a></li>
+      <li><a href="/how-much-will-10000-grow-in-10-years">How Much Will $10,000 Grow in 10 Years?</a></li>
+      <li><a href="/daily-compound-interest-calculator">Daily Compound Interest Calculator</a></li>
+      <li><a href="/compound-interest-calculator-with-monthly-contributions">Compound Interest Calculator with Monthly Contributions</a></li>
+      <li><a href="/high-yield-savings-account-calculator">High-Yield Savings Account Calculator</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/">GrowthCalc</a> › Roth IRA Growth Calculator</p>
+  <h2>Roth IRA Growth Calculator: how it works</h2>
+  <p>A Roth IRA is funded with money you have already paid tax on, and in exchange the growth comes out tax-free in retirement. That makes it the account where compound interest is worth the most, because every dollar of interest in the final balance is a dollar you keep.</p><p>The preset spreads the 2025 contribution limit of $7,000 across the year as $583 a month, starts from a $5,000 balance, assumes a 7 percent return compounded monthly over 35 years, and switches on a 3 percent inflation view. Adjust the monthly figure if you are over 50 and eligible for the catch-up contribution.</p>
+  <h2>Why contribution timing changes the result</h2>
+  <p>Contributions can be made any time until the tax filing deadline, which tempts people to fund the account in a lump sum each April. Money invested earlier compounds longer, so contributing in January or monthly from January usually beats a last-minute April deposit by a few percent over a career. Switch the contribution timing between "start" and "end" of the month to see the small but real difference; the gap between January and April funding is larger still.</p><ul><li>Limits change most years; check the current figure before setting the monthly amount.</li><li>Income limits apply to direct Roth contributions; the backdoor route exists for high earners.</li><li>Contributions (not growth) can be withdrawn at any time without penalty, which makes a Roth a reasonable second emergency fund.</li></ul>
+  <h2>Reading the contributions vs growth split</h2>
+  <p>With the preset values, total contributions over 35 years are about $250,000 and the final balance is several times that. The difference is tax-free growth, the single biggest argument for starting a Roth in your twenties even with small amounts. Use the yearly table to spot the crossover year when annual growth overtakes your annual contribution.</p><p>Returns are not guaranteed and this is not financial advice. Use the scenario comparison in GrowthCalc Pro to run 5, 7 and 9 percent side by side and plan for the lower one.</p>
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>How much will a Roth IRA be worth in 30 years?</summary><p>Maxing a $7,000 annual contribution at a 7 percent return grows to roughly $700,000 in 30 years, of which about $210,000 is contributions. Change the inputs above to match your own start date and return assumption.</p></details>
+    <details><summary>Should I contribute monthly or once a year?</summary><p>Monthly from January, or a lump sum as early in the year as you can afford. Both beat waiting until the deadline because the money compounds longer.</p></details>
+    <details><summary>Is Roth growth really tax-free?</summary><p>Qualified withdrawals after 59½ and once the account is five years old are federal-tax-free. Rules can change; this calculator does not model taxes.</p></details>
+    <details><summary>Can I model the catch-up contribution after 50?</summary><p>Yes. Save the current plan as a scenario, then raise the monthly amount for the later years in a second scenario using the contribution increase field.</p></details>
+  </div>
+  <p class="back-guide">Looking for the full guide, tips and the complete FAQ? Read the <a href="/">main GrowthCalc page</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. GrowthCalc is the compound interest calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. Not financial advice. For education only.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to GrowthCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Compare up to 3 scenarios on one chart</li>
+      <li>Goal calculator – solve the monthly contribution you need</li>
+      <li>CSV export of yearly and monthly tables</li>
+      <li>Printable PDF report</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script>(function(){var q="p=5000&m=583&t=start&r=7&f=monthly&y=35&g=0&c=USD&i=1&ir=3";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/app.js"></script>
+</body>
+</html>

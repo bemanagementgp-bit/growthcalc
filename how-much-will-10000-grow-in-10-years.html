@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Much Will $10,000 Grow in 10 Years? Compound Interest Calculator | GrowthCalc</title>
+  <meta name="description" content="See how much $10,000 grows in 10 years at 4%, 7% or 10% with compound interest, with and without monthly contributions, in a free interactive calculator.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years">
+  <meta property="og:title" content="How Much Will $10,000 Grow in 10 Years? Compound Interest Calculator | GrowthCalc">
+  <meta property="og:description" content="See how much $10,000 grows in 10 years at 4%, 7% or 10% with compound interest, with and without monthly contributions, in a free interactive calculator.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How Much Will $10,000 Grow in 10 Years? Compound Interest Calculator | GrowthCalc">
+  <meta name="twitter:description" content="See how much $10,000 grows in 10 years at 4%, 7% or 10% with compound interest, with and without monthly contributions, in a free interactive calculator.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"How Much Will $10,000 Grow in 10 Years? Compound Interest Calculator | GrowthCalc","description":"See how much $10,000 grows in 10 years at 4%, 7% or 10% with compound interest, with and without monthly contributions, in a free interactive calculator.","url":"https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"How Much Will $10,000 Grow in 10 Years?","item":"https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much is $10,000 worth after 10 years at 7 percent?","acceptedAnswer":{"@type":"Answer","text":"About $20,100 with monthly compounding, or $19,700 with annual compounding. The exact figure is shown above and in the year-by-year table."}},{"@type":"Question","name":"What if I add $100 a month?","acceptedAnswer":{"@type":"Answer","text":"Set the monthly contribution to 100: the balance after ten years rises to roughly $37,400, of which $22,000 is money you deposited."}},{"@type":"Question","name":"Does daily compounding make a big difference?","acceptedAnswer":{"@type":"Answer","text":"No. At 7 percent, daily versus monthly compounding adds roughly $40 over ten years on $10,000. Rate and time dominate."}},{"@type":"Question","name":"Is 7 percent a safe assumption?","acceptedAnswer":{"@type":"Answer","text":"It is a common long-run average for a diversified stock portfolio after inflation, not a promise. Run 4 and 10 percent too to see the realistic range."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="GrowthCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Compound interest calculator</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
+      <button class="btn btn-primary btn-sm" onclick="openPro('nav')">Pro</button>
+      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Investing · Lump sum growth</span>
+  <h1>How Much Will <section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Investing · Lump sum growth</span>
+  <h1>0,000 Grow in 10 Years?</h1>
+  <p class="tagline">Calculate what a $10,000 lump sum becomes after 10 years at any interest rate and compounding frequency, with an optional monthly top-up.</p>
+  <div class="badges">
+  <span class="badge">100% free</span>
+  <span class="badge">No sign-up</span>
+  <span class="badge">Works in your browser</span>
+  <span class="badge">8 currencies</span>
+  <span class="badge">Shareable link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Your plan</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Initial investment</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Monthly contribution</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Contribution timing</label>
+            <select id="timing">
+              <option value="end">End of each month</option>
+              <option value="start">Start of each month</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Annual contribution increase (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Raise your contribution each year, e.g. with a pay rise.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Annual interest rate (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Compounding frequency</label>
+            <select id="freq">
+              <option value="daily">Daily</option>
+              <option value="monthly" selected>Monthly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="annually">Annually</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Years to grow</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Years to grow (number)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Years to grow (slider)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD">USD – US Dollar ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – British Pound (£)</option>
+              <option value="CAD">CAD – Canadian Dollar</option>
+              <option value="AUD">AUD – Australian Dollar</option>
+              <option value="INR">INR – Indian Rupee (₹)</option>
+              <option value="MXN">MXN – Mexican Peso</option>
+              <option value="BRL">BRL – Brazilian Real (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Adjust for inflation</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Expected annual inflation (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Expected annual inflation %. Shows what your balance is worth in today's money.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copy summary</button>
+          <button class="btn" id="btnShare" type="button">🔗 Share link</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Reset</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Compound Interest Report</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Generated <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Your results</h2>
+        <p class="k">Final balance <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Total contributions</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Total interest earned</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Interest as % of balance</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Inflation-adjusted balance</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Doubling time (rule of 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Doubling time (exact)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Growth over time</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Compare scenarios <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Save the current inputs as a scenario, then change them to see the difference. Saved scenarios appear as lines on the chart. Free plan: 1 scenario, Pro: up to 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Scenario name (e.g. Aggressive 9%)" maxlength="40" aria-label="Scenario name">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Save scenario</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Scenario</th><th class="num">Initial</th><th class="num">Monthly</th><th class="num">Rate</th><th class="num">Years</th><th class="num">Contributed</th><th class="num">Interest</th><th class="num">Final balance</th><th class="num">vs current</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Goal calculator <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“I want to reach X by year Y – what monthly contribution do I need?” Uses your initial investment, rate, compounding and contribution settings above.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Target amount</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Target year (years from now)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Solve monthly contribution</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Yearly breakdown</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Table granularity">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Yearly</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Monthly</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Print report <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Go Pro <span class="pro-badge">LIFETIME</span></h3>
+        <ul>
+          <li>Compare up to 3 scenarios side by side</li>
+          <li>Goal calculator: solve the monthly amount you need</li>
+          <li>CSV export of yearly &amp; monthly tables</li>
+          <li>Printable PDF report</li>
+        </ul>
+        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span> one-time</button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Grow your money, slowly</h3>
+        <p class="hint">Saving and investing basics, calculators and new free tools. Not financial advice.</p>
+        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+          <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="hint tiny">No spam. Unsubscribe anytime.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Put compounding to work</h2>
+  <p class="hint">Partner links – we may earn a commission if you open an account, at no extra cost to you. This is not a recommendation to invest.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">More ways to use GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/compound-interest-calculator-for-retirement">Compound Interest Calculator for Retirement</a></li>
+      <li><a href="/roth-ira-growth-calculator">Roth IRA Growth Calculator</a></li>
+      <li><a href="/house-down-payment-savings-calculator">House Down Payment Savings Calculator</a></li>
+      <li><a href="/college-savings-calculator">College Savings Calculator</a></li>
+      <li><a href="/how-much-will-10000-grow-in-10-years" class="current" aria-current="page">How Much Will $10,000 Grow in 10 Years?</a></li>
+      <li><a href="/daily-compound-interest-calculator">Daily Compound Interest Calculator</a></li>
+      <li><a href="/compound-interest-calculator-with-monthly-contributions">Compound Interest Calculator with Monthly Contributions</a></li>
+      <li><a href="/high-yield-savings-account-calculator">High-Yield Savings Account Calculator</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/">GrowthCalc</a> › How Much Will $10,000 Grow in 10 Years?</p>
+  <h2>How Much Will $10,000 Grow in 10 Years?: how it works</h2>
+  <p>Ten thousand dollars left alone for ten years at 7 percent becomes about $20,100: it roughly doubles, which is the rule of 72 in action (72 ÷ 7 ≈ 10 years). At 4 percent it reaches about $14,900; at 10 percent, about $27,100. The gap between those outcomes is entirely the rate, which is why people argue about expected returns so much.</p><p>The preset below runs the pure lump-sum case: $10,000, no monthly contributions, 7 percent compounded monthly for 10 years. Add even $100 a month and the end balance jumps by more than $17,000, which is the second lesson of the page.</p>
+  <h2>The numbers at common rates</h2>
+  <p>With monthly compounding and no further deposits, $10,000 after ten years becomes approximately:</p><ul><li><strong>2 percent</strong> (a typical savings account in a low-rate decade): about $12,200.</li><li><strong>4.5 percent</strong> (high-yield savings or short bonds): about $15,700.</li><li><strong>7 percent</strong> (a long-run real-ish stock market assumption): about $20,100.</li><li><strong>10 percent</strong> (long-run nominal stock market average, with large yearly swings): about $27,100.</li></ul><p>Switch the compounding frequency to daily or annually and you will see the difference is small, a few tens of dollars at these rates. The rate and the time matter; the compounding schedule barely does.</p>
+  <h2>What the chart does not show</h2>
+  <p>Markets do not deliver 7 percent every year; they deliver −20 percent, +25 percent and +8 percent in some order that averages out over long periods. A ten-year window can still finish below average, which is why ten years is usually treated as the minimum horizon for stock investments and why switching inflation on (3 percent is the usual assumption) gives a more honest picture of purchasing power.</p><p>Fees and taxes are also outside the model. For planning, compare a low and a high scenario side by side (GrowthCalc Pro) rather than relying on one number. Not financial advice.</p>
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>How much is $10,000 worth after 10 years at 7 percent?</summary><p>About $20,100 with monthly compounding, or $19,700 with annual compounding. The exact figure is shown above and in the year-by-year table.</p></details>
+    <details><summary>What if I add $100 a month?</summary><p>Set the monthly contribution to 100: the balance after ten years rises to roughly $37,400, of which $22,000 is money you deposited.</p></details>
+    <details><summary>Does daily compounding make a big difference?</summary><p>No. At 7 percent, daily versus monthly compounding adds roughly $40 over ten years on $10,000. Rate and time dominate.</p></details>
+    <details><summary>Is 7 percent a safe assumption?</summary><p>It is a common long-run average for a diversified stock portfolio after inflation, not a promise. Run 4 and 10 percent too to see the realistic range.</p></details>
+  </div>
+  <p class="back-guide">Looking for the full guide, tips and the complete FAQ? Read the <a href="/">main GrowthCalc page</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. GrowthCalc is the compound interest calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. Not financial advice. For education only.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <h3 id="proTitle">Upgrade to GrowthCalc Pro <span class="pro-badge">LIFETIME</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
+    <ul>
+      <li>Compare up to 3 scenarios on one chart</li>
+      <li>Goal calculator – solve the monthly contribution you need</li>
+      <li>CSV export of yearly and monthly tables</li>
+      <li>Printable PDF report</li>
+      <li>Lifetime updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+  </div>
+</div>
+<script>(function(){var q="p=10000&m=0&t=end&r=7&f=monthly&y=10&g=0&c=USD&i=0&ir=3";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/app.js"></script>
+</body>
+</html>

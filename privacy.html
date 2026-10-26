@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#f97316">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | GrowthCalc</title>
   <meta name="description" content="Privacy policy for GrowthCalc, the free compound interest calculator. All calculations run locally in your browser; we explain cookies, ads, analytics and affiliate links.">
   <link rel="canonical" href="https://growthcalc-tool.vercel.app/privacy">
   <meta name="robots" content="noindex, follow">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="/config.js"></script>
   <script src="/monetize.js"></script>
@@ -15,8 +19,12 @@
 <body>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="/" aria-label="GrowthCalc home"><span class="logo" aria-hidden="true">↗</span><span>GrowthCalc</span></a>
+    <a class="brand" href="/" aria-label="GrowthCalc home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Compound interest calculator</span></span>
+    </a>
     <nav class="nav" aria-label="Main">
+      <span class="brand-by">by <b>Be Management</b></span>
       <a class="btn btn-sm" href="/">← Back to calculator</a>
       <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
     </nav>
@@ -58,9 +66,29 @@
 </section>
 
 <footer class="site-footer">
-  <div class="container">
-    <div>© <span data-year></span> GrowthCalc · Not financial advice. For education only.</div>
-    <div><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · Made with ❤️</div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>A collection of free, private tools that run entirely in your browser. GrowthCalc is the compound interest calculator of the family, built and maintained by Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>More free tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Invoices</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Freelance rates</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Image compressor</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Compound interest</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP subnets</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. Not financial advice. For education only.</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
   </div>
 </footer>
 </body>

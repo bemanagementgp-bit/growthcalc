@@ -253,6 +253,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 
 
 
+
 /* ===== GrowthCalc – app specific ===== */
 .tool-col{display:flex;flex-direction:column;gap:20px;min-width:0}
 .card-title{font-size:1.15rem;margin:0 0 14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}

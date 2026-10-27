@@ -1,14 +1,597 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://growthcalc-tool.vercel.app/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/privacy</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://growthcalc-tool.vercel.app/terms</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://growthcalc-tool.vercel.app/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/college-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-for-retirement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-for-retirement"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/compound-interest-calculator-with-monthly-contributions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/compound-interest-calculator-with-monthly-contributions"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/house-down-payment-savings-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/house-down-payment-savings-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/how-much-will-10000-grow-in-10-years"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/how-much-will-10000-grow-in-10-years"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/privacy</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/privacy"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/es/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/pt/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/fr/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/de/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/terms"/>
+  </url>
+  <url><loc>https://growthcalc-tool.vercel.app/it/terms</loc><lastmod>2026-10-27</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/terms"/>
+  </url>
 </urlset>

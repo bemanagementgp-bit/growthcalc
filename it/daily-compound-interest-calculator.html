@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calcolatore di interesse composto giornaliero – Giornaliero, mensile o annuale | GrowthCalc</title>
+  <meta name="description" content="Calcolatore gratuito di interesse composto giornaliero. Confronta la capitalizzazione giornaliera, mensile, trimestrale e annuale sui risparmi e scopri la differenza reale in dollari nel tempo.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator">
+  <meta property="og:title" content="Calcolatore di interesse composto giornaliero – Giornaliero, mensile o annuale | GrowthCalc">
+  <meta property="og:description" content="Calcolatore gratuito di interesse composto giornaliero. Confronta la capitalizzazione giornaliera, mensile, trimestrale e annuale sui risparmi e scopri la differenza reale in dollari nel tempo.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calcolatore di interesse composto giornaliero – Giornaliero, mensile o annuale | GrowthCalc">
+  <meta name="twitter:description" content="Calcolatore gratuito di interesse composto giornaliero. Confronta la capitalizzazione giornaliera, mensile, trimestrale e annuale sui risparmi e scopri la differenza reale in dollari nel tempo.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GrowthCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Calcolatore di interesse composto giornaliero – Giornaliero, mensile o annuale | GrowthCalc","description":"Calcolatore gratuito di interesse composto giornaliero. Confronta la capitalizzazione giornaliera, mensile, trimestrale e annuale sui risparmi e scopri la differenza reale in dollari nel tempo.","url":"https://growthcalc-tool.vercel.app/daily-compound-interest-calculator","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Calcolatore di interesse composto giornaliero","item":"https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"La capitalizzazione giornaliera è meglio di quella mensile?","acceptedAnswer":{"@type":"Answer","text":"Di poco. Ai tassi tipici dei conti deposito la differenza è di qualche centesimo di punto di APY, che su un saldo di $20,000 vale pochi dollari all'anno."}},{"@type":"Question","name":"Come converto un tasso nominale in APY?","acceptedAnswer":{"@type":"Answer","text":"APY = (1 + r/n)^n − 1, dove n è il numero di periodi di capitalizzazione all'anno. Inserisci qui il tasso nominale e scegli la frequenza; il saldo finale riflette l'APY."}},{"@type":"Question","name":"Il calcolatore capitalizza ogni giorno anche i versamenti?","acceptedAnswer":{"@type":"Answer","text":"I versamenti vengono aggiunti ogni mese e da quel momento maturano interessi con la frequenza scelta, come funziona la maggior parte dei conti."}},{"@type":"Question","name":"Posso vedere affiancata la differenza tra le frequenze?","acceptedAnswer":{"@type":"Answer","text":"Sì, con GrowthCalc Pro: salva la versione giornaliera come scenario, passa ad annuale e confronta entrambe nel grafico e nella tabella."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="it_IT">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/it/" aria-label="Home di GrowthCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Calcolatore di interesse composto</span></span>
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Altri strumenti"><span class="mt-label">Altri strumenti</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Fatture</small></a>
+          <a href="https://ratecalc-tool.vercel.app"><span class="mi">R</span>RateCalc<small>Tariffe freelance</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>Codici QR</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compressore di immagini</small></a>
+          <a href="https://growthcalc-tool.vercel.app" class="current"><span class="mi">G</span>GrowthCalc<small>Interesse composto</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Subnet IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockup di screenshot</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockup di chat e post</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slide per caroselli</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formati social</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Cornici e mockup per foto</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Giveaway su Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Ricerca IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Ridimensiona immagini e video</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">di <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Installa questo strumento come app">⤓ Installa</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Cambia tema">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Risparmio · Frequenza di capitalizzazione</span>
+  <h1>Calcolatore di interesse composto giornaliero</h1>
+  <p class="tagline">Calcola la crescita con capitalizzazione giornaliera e confrontala con quella mensile e annuale per vedere quanto aggiunge davvero la frequenza.</p>
+  <div class="badges">
+  <span class="badge">100% gratis</span>
+  <span class="badge">Nessuna registrazione</span>
+  <span class="badge">Funziona nel tuo browser</span>
+  <span class="badge">8 valute</span>
+  <span class="badge">Link condivisibile</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Il tuo piano</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Investimento iniziale</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Versamento mensile</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Momento del versamento</label>
+            <select id="timing">
+              <option value="end">Fine di ogni mese</option>
+              <option value="start">Inizio di ogni mese</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Aumento annuo dei versamenti (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Aumenta il versamento ogni anno, ad es. con un aumento di stipendio.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Tasso di interesse annuo (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Frequenza di capitalizzazione</label>
+            <select id="freq">
+              <option value="daily">Giornaliera</option>
+              <option value="monthly" selected>Mensile</option>
+              <option value="quarterly">Trimestrale</option>
+              <option value="annually">Annuale</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Anni di crescita</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Anni di crescita (numero)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Anni di crescita (cursore)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Valuta</label>
+            <select id="currency">
+              <option value="USD">USD – Dollaro statunitense ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – Sterlina britannica (£)</option>
+              <option value="CAD">CAD – Dollaro canadese</option>
+              <option value="AUD">AUD – Dollaro australiano</option>
+              <option value="INR">INR – Rupia indiana (₹)</option>
+              <option value="MXN">MXN – Peso messicano</option>
+              <option value="BRL">BRL – Real brasiliano (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Correggi per l'inflazione</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Inflazione annua prevista (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Inflazione annua prevista in %. Mostra quanto vale il tuo saldo in valore di oggi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copia riepilogo</button>
+          <button class="btn" id="btnShare" type="button">🔗 Link di condivisione</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Ripristina</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Report sull'interesse composto</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Generato il <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">I tuoi risultati</h2>
+        <p class="k">Saldo finale <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Totale versato</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Totale interessi maturati</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Interessi in % del saldo</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Saldo corretto per l'inflazione</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Tempo di raddoppio (regola del 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Tempo di raddoppio (esatto)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Crescita nel tempo</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Confronta scenari <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Salva i dati attuali come scenario, poi modificali per vedere la differenza. Gli scenari salvati compaiono come linee nel grafico. Piano gratuito: 1 scenario, Pro: fino a 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Nome dello scenario (es. Aggressivo 9%)" maxlength="40" aria-label="Nome dello scenario">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Salva scenario</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Scenario</th><th class="num">Iniziale</th><th class="num">Mensile</th><th class="num">Tasso</th><th class="num">Anni</th><th class="num">Versato</th><th class="num">Interessi</th><th class="num">Saldo finale</th><th class="num">rispetto all'attuale</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Calcolatore obiettivo <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“Voglio arrivare a X entro l'anno Y: che versamento mensile mi serve?” Usa l'investimento iniziale, il tasso, la capitalizzazione e le impostazioni dei versamenti qui sopra.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Importo obiettivo</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Anno obiettivo (anni da oggi)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Calcola il versamento mensile</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Dettaglio annuale</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Dettaglio della tabella">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Annuale</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Mensile</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Stampa report <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Passa a Pro <span class="pro-badge">A VITA</span></h3>
+        <ul>
+          <li>Confronta fino a 3 scenari affiancati</li>
+          <li>Calcolatore obiettivo: calcola l'importo mensile che ti serve</li>
+          <li>Esportazione CSV delle tabelle annuali e mensili</li>
+          <li>Report PDF stampabile</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Passa a Pro – <span data-pro-price>$9</span> una tantum</button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Fai crescere i tuoi soldi, con calma</h3>
+        <p class="hint">Basi di risparmio e investimento, calcolatori e nuovi strumenti gratuiti. Non è consulenza finanziaria.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="tu@email.com" aria-label="Indirizzo email" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Abbonati</button>
+        </form>
+        <p class="hint tiny">Niente spam. Annulli l'iscrizione quando vuoi.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Metti al lavoro la capitalizzazione</h2>
+  <p class="hint">Link di partner: potremmo ricevere una commissione se apri un conto, senza costi aggiuntivi per te. Non è una raccomandazione a investire.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Altri modi per usare GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/it/compound-interest-calculator-for-retirement">Calcolatore di interesse composto per la pensione</a></li>
+      <li><a href="/it/roth-ira-growth-calculator">Calcolatore di crescita Roth IRA</a></li>
+      <li><a href="/it/house-down-payment-savings-calculator">Calcolatore risparmi per l'anticipo della casa</a></li>
+      <li><a href="/it/college-savings-calculator">Calcolatore risparmi per l'università</a></li>
+      <li><a href="/it/how-much-will-10000-grow-in-10-years">Quanto cresceranno $10,000 in 10 anni?</a></li>
+      <li><a href="/it/daily-compound-interest-calculator" class="current" aria-current="page">Calcolatore di interesse composto giornaliero</a></li>
+      <li><a href="/it/compound-interest-calculator-with-monthly-contributions">Calcolatore di interesse composto con versamenti mensili</a></li>
+      <li><a href="/it/high-yield-savings-account-calculator">Calcolatore per conti deposito ad alto rendimento</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/it/">GrowthCalc</a> › Calcolatore di interesse composto giornaliero</p>
+  <h2>Calcolatore di interesse composto giornaliero: come funziona</h2>
+  <p>Le banche amano pubblicizzare la capitalizzazione giornaliera perché sembra dare più interessi, e tecnicamente è così. La domanda è quanti in più. Per un conto deposito al 4.5 percento, la differenza tra capitalizzazione giornaliera e mensile su $20,000 in cinque anni è di pochi dollari. La differenza tra il 4.5 e il 4.0 percento è di qualche centinaio.</p><p>Il preset imposta GrowthCalc sulla capitalizzazione giornaliera al 4.5 percento su un saldo di $20,000 con $250 aggiunti al mese per cinque anni, una tipica configurazione da conto ad alto rendimento. Cambia la frequenza in mensile o annuale e guarda il saldo finale: la differenza è più piccola di quanto pensi.</p>
+  <h2>Come si calcola la capitalizzazione giornaliera</h2>
+  <p>Con la capitalizzazione giornaliera, la banca divide il tasso annuo per 365, applica quella frazione ogni giorno e gli interessi del giorno dopo vengono calcolati sul saldo leggermente più alto. Il rendimento annuo effettivo (APY) è (1 + r/365)<sup>365</sup> − 1. Con un tasso nominale del 4.5 percento sono il 4.60 percento di APY; la capitalizzazione mensile dà il 4.59 percento; quella annuale esattamente il 4.50 percento. GrowthCalc simula mese per mese usando il tasso mensile effettivo per la frequenza che scegli, quindi i versamenti vengono aggiunti ogni mese indipendentemente da quanto spesso vengono accreditati gli interessi.</p><ul><li>Quando scegli un conto, confronta l'APY, non i tassi nominali.</li><li>Un tasso più alto di 0.25 punti batte qualsiasi vantaggio di frequenza di capitalizzazione.</li><li>Gli interessi sono di solito tassati nell'anno in cui vengono accreditati.</li></ul>
+  <h2>Quando la frequenza conta davvero</h2>
+  <p>La frequenza di capitalizzazione diventa rilevante quando i tassi sono alti o i saldi grandi: su $500,000 all'8 percento, la capitalizzazione giornaliera e quella annuale differiscono di circa $1,600 all'anno. Conta anche al contrario, sui debiti. Le carte di credito di solito capitalizzano ogni giorno, ed è in parte per questo che i saldi crescono più in fretta di quanto suggerisca il TAN dichiarato; vale la stessa logica del calcolatore, solo che tu sei dalla parte sbagliata.</p><p>Per la maggior parte dei risparmiatori il consiglio pratico è semplice: scegli l'APY più alto senza commissioni, automatizza i versamenti e lascia che il tempo faccia la capitalizzazione. Non è consulenza finanziaria; i tassi mostrati sono esempi, non offerte.</p>
+  <h2>Domande frequenti</h2>
+  <div class="faq">
+    <details><summary>La capitalizzazione giornaliera è meglio di quella mensile?</summary><p>Di poco. Ai tassi tipici dei conti deposito la differenza è di qualche centesimo di punto di APY, che su un saldo di $20,000 vale pochi dollari all'anno.</p></details>
+    <details><summary>Come converto un tasso nominale in APY?</summary><p>APY = (1 + r/n)^n − 1, dove n è il numero di periodi di capitalizzazione all'anno. Inserisci qui il tasso nominale e scegli la frequenza; il saldo finale riflette l'APY.</p></details>
+    <details><summary>Il calcolatore capitalizza ogni giorno anche i versamenti?</summary><p>I versamenti vengono aggiunti ogni mese e da quel momento maturano interessi con la frequenza scelta, come funziona la maggior parte dei conti.</p></details>
+    <details><summary>Posso vedere affiancata la differenza tra le frequenze?</summary><p>Sì, con GrowthCalc Pro: salva la versione giornaliera come scenario, passa ad annuale e confronta entrambe nel grafico e nella tabella.</p></details>
+  </div>
+  <p class="back-guide">Cerchi la guida completa, i consigli e tutte le FAQ? Leggi la <a href="/it/">pagina principale di GrowthCalc</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Una raccolta di strumenti gratuiti e privati che funzionano interamente nel tuo browser. GrowthCalc è il calcolatore di interesse composto della famiglia, creato e gestito da Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Altri strumenti gratuiti</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Fatture</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Tariffe freelance</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · Codici QR</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compressore di immagini</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Interesse composto</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Subnet IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockup di screenshot</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockup di chat e post</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slide per caroselli</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formati social</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Cornici e mockup per foto</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Giveaway su Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Ricerca IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Ridimensiona immagini e video</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. Non è consulenza finanziaria. Solo a scopo educativo.</span>
+      <span><a href="/it/privacy" data-i18n-href="/it/privacy">Privacy</a> · <a href="/it/terms" data-i18n-href="/it/terms">Termini</a> · <a href="#" data-action="cookie-settings">Impostazioni cookie</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Chiudi">✕</button>
+    <h3 id="proTitle">Passa a GrowthCalc Pro <span class="pro-badge">A VITA</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>una tantum</small></div>
+    <ul>
+      <li>Confronta fino a 3 scenari su un solo grafico</li>
+      <li>Calcolatore obiettivo – calcola il versamento mensile che ti serve</li>
+      <li>Esportazione CSV delle tabelle annuali e mensili</li>
+      <li>Report PDF stampabile</li>
+      <li>Aggiornamenti a vita</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Passa a Pro</button>
+    <p class="hint" style="margin-top:12px">Hai già acquistato? <a href="#" data-action="toggle-license">Inserisci la chiave di licenza</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Chiave di licenza" aria-label="Chiave di licenza"><button class="btn" data-action="activate-license">Attiva</button></div>
+  </div>
+</div>
+<script src="/preset.js" data-q="p=20000&amp;m=250&amp;t=end&amp;r=4.5&amp;f=daily&amp;y=5&amp;g=0&amp;c=USD&amp;i=0&amp;ir=3"></script>
+<script src="/app.js"></script>
+</body>
+</html>

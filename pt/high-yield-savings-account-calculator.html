@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de poupança de alto rendimento – Juros ganhos ao longo do tempo | GrowthCalc</title>
+  <meta name="description" content="Calculadora grátis de poupança de alto rendimento. Estime os juros ganhos com seu APY e depósitos mensais, compare com uma conta comum e veja o efeito da inflação.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator">
+  <meta property="og:title" content="Calculadora de poupança de alto rendimento – Juros ganhos ao longo do tempo | GrowthCalc">
+  <meta property="og:description" content="Calculadora grátis de poupança de alto rendimento. Estime os juros ganhos com seu APY e depósitos mensais, compare com uma conta comum e veja o efeito da inflação.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calculadora de poupança de alto rendimento – Juros ganhos ao longo do tempo | GrowthCalc">
+  <meta name="twitter:description" content="Calculadora grátis de poupança de alto rendimento. Estime os juros ganhos com seu APY e depósitos mensais, compare com uma conta comum e veja o efeito da inflação.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GrowthCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Calculadora de poupança de alto rendimento – Juros ganhos ao longo do tempo | GrowthCalc","description":"Calculadora grátis de poupança de alto rendimento. Estime os juros ganhos com seu APY e depósitos mensais, compare com uma conta comum e veja o efeito da inflação.","url":"https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Calculadora de poupança de alto rendimento","item":"https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto rendem $30,000 em uma conta de alto rendimento?","acceptedAnswer":{"@type":"Answer","text":"Com APY de 4,5 por cento, cerca de $1,380 no primeiro ano, e mais nos anos seguintes conforme os juros se acumulam e se você continuar depositando. A tabela anual acima mostra o caminho exato."}},{"@type":"Question","name":"Vale a pena ter uma conta de alto rendimento com saldos pequenos?","acceptedAnswer":{"@type":"Answer","text":"Sim, já que trocar é grátis. Sobre $5,000, a diferença em relação a uma conta comum fica em torno de $200 por ano, que se capitalizam como todo o resto."}},{"@type":"Question","name":"Por que o saldo ajustado pela inflação cresce tão devagar?","acceptedAnswer":{"@type":"Answer","text":"Porque o retorno real é o APY menos a inflação. Com APY de 4,5 por cento e inflação de 3 por cento, o poder de compra cresce cerca de 1,5 por cento ao ano."}},{"@type":"Question","name":"Posso simular uma queda na taxa depois do primeiro ano?","acceptedAnswer":{"@type":"Answer","text":"Salve o primeiro ano como um cenário e crie um segundo com a taxa menor (GrowthCalc Pro), ou simplesmente rode o período inteiro com a taxa menor para uma estimativa conservadora."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator">
+  <link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/high-yield-savings-account-calculator">
+  <link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/high-yield-savings-account-calculator">
+  <link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/high-yield-savings-account-calculator">
+  <link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/high-yield-savings-account-calculator">
+  <link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/high-yield-savings-account-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/high-yield-savings-account-calculator">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="pt_BR">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/pt/" aria-label="Início do GrowthCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Calculadora de juros compostos</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Mais ferramentas"><span class="mt-label">Mais ferramentas</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Faturas</small></a>
+          <a href="https://ratecalc-tool.vercel.app"><span class="mi">R</span>RateCalc<small>Preços para freelancers</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>QR codes</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compressor de imagens</small></a>
+          <a href="https://growthcalc-tool.vercel.app" class="current"><span class="mi">G</span>GrowthCalc<small>Juros compostos</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Sub-redes IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockups de capturas de tela</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockups de chats e posts</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slides de carrossel</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formatos para redes sociais</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Molduras e mockups de fotos</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Sorteios no Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Consulta de IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Redimensionador de imagens e vídeos</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">por <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Instale esta ferramenta como app">⤓ Instalar</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Alternar tema">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Poupança · Contas de alto rendimento</span>
+  <h1>Calculadora de poupança de alto rendimento</h1>
+  <p class="tagline">Estime quanto de juros uma conta poupança de alto rendimento gera sobre seu saldo e depósitos mensais, e quanto ela paga a mais do que uma conta comum.</p>
+  <div class="badges">
+  <span class="badge">100% grátis</span>
+  <span class="badge">Sem cadastro</span>
+  <span class="badge">Funciona no seu navegador</span>
+  <span class="badge">8 moedas</span>
+  <span class="badge">Link compartilhável</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Seu plano</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Investimento inicial</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Aporte mensal</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Momento do aporte</label>
+            <select id="timing">
+              <option value="end">Fim de cada mês</option>
+              <option value="start">Início de cada mês</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Aumento anual do aporte (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Aumente seu aporte a cada ano, por exemplo, com um aumento de salário.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Taxa de juros anual (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Frequência de capitalização</label>
+            <select id="freq">
+              <option value="daily">Diária</option>
+              <option value="monthly" selected>Mensal</option>
+              <option value="quarterly">Trimestral</option>
+              <option value="annually">Anual</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Anos de crescimento</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Anos de crescimento (número)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Anos de crescimento (controle deslizante)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Moeda</label>
+            <select id="currency">
+              <option value="USD">USD – Dólar americano ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – Libra esterlina (£)</option>
+              <option value="CAD">CAD – Dólar canadense</option>
+              <option value="AUD">AUD – Dólar australiano</option>
+              <option value="INR">INR – Rupia indiana (₹)</option>
+              <option value="MXN">MXN – Peso mexicano</option>
+              <option value="BRL">BRL – Real brasileiro (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Ajustar pela inflação</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Inflação anual esperada (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Inflação anual esperada em %. Mostra quanto seu saldo vale em dinheiro de hoje.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copiar resumo</button>
+          <button class="btn" id="btnShare" type="button">🔗 Compartilhar link</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Redefinir</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Relatório de juros compostos</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Gerado em <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Seus resultados</h2>
+        <p class="k">Saldo final <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Total de aportes</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Total de juros ganhos</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Juros como % do saldo</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Saldo ajustado pela inflação</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Tempo para dobrar (regra de 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Tempo para dobrar (exato)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Crescimento ao longo do tempo</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Comparar cenários <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Salve os dados atuais como um cenário e depois altere-os para ver a diferença. Os cenários salvos aparecem como linhas no gráfico. Plano grátis: 1 cenário, Pro: até 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Nome do cenário (ex.: Agressivo 9%)" maxlength="40" aria-label="Nome do cenário">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Salvar cenário</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Cenário</th><th class="num">Inicial</th><th class="num">Mensal</th><th class="num">Taxa</th><th class="num">Anos</th><th class="num">Aportado</th><th class="num">Juros</th><th class="num">Saldo final</th><th class="num">vs atual</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Calculadora de metas <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“Quero chegar a X até o ano Y – qual aporte mensal preciso fazer?” Usa seu investimento inicial, taxa, capitalização e configurações de aporte acima.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Valor desejado</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Ano da meta (anos a partir de hoje)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Calcular aporte mensal</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Detalhamento anual</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Detalhamento da tabela">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Anual</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Mensal</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Imprimir relatório <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Seja Pro <span class="pro-badge">VITALÍCIO</span></h3>
+        <ul>
+          <li>Compare até 3 cenários lado a lado</li>
+          <li>Calculadora de metas: descubra o valor mensal necessário</li>
+          <li>Exportação CSV das tabelas anual e mensal</li>
+          <li>Relatório em PDF para imprimir</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Seja Pro – <span data-pro-price>$9</span> pagamento único</button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Faça seu dinheiro crescer, com calma</h3>
+        <p class="hint">Noções de poupança e investimento, calculadoras e novas ferramentas grátis. Não é consultoria financeira.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="voce@email.com" aria-label="Endereço de e-mail" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Assinar</button>
+        </form>
+        <p class="hint tiny">Sem spam. Cancele quando quiser.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Coloque os juros compostos para trabalhar</h2>
+  <p class="hint">Links de parceiros – podemos receber uma comissão se você abrir uma conta, sem custo extra para você. Isto não é uma recomendação de investimento.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Mais formas de usar o GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/pt/compound-interest-calculator-for-retirement">Calculadora de juros compostos para aposentadoria</a></li>
+      <li><a href="/pt/roth-ira-growth-calculator">Calculadora de crescimento de Roth IRA</a></li>
+      <li><a href="/pt/house-down-payment-savings-calculator">Calculadora de poupança para a entrada da casa</a></li>
+      <li><a href="/pt/college-savings-calculator">Calculadora de poupança para a faculdade</a></li>
+      <li><a href="/pt/how-much-will-10000-grow-in-10-years">Quanto rendem $10,000 em 10 anos?</a></li>
+      <li><a href="/pt/daily-compound-interest-calculator">Calculadora de juros compostos diários</a></li>
+      <li><a href="/pt/compound-interest-calculator-with-monthly-contributions">Calculadora de juros compostos com aportes mensais</a></li>
+      <li><a href="/pt/high-yield-savings-account-calculator" class="current" aria-current="page">Calculadora de poupança de alto rendimento</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/pt/">GrowthCalc</a> › Calculadora de poupança de alto rendimento</p>
+  <h2>Calculadora de poupança de alto rendimento: como funciona</h2>
+  <p>A diferença entre uma conta poupança comum que paga 0,5 por cento e uma conta de alto rendimento que paga 4,5 por cento não é um erro de arredondamento. Em uma reserva de emergência de $30,000, são mais de $1,200 por ano, com o mesmo risco e a mesma cobertura de seguro. Uma calculadora transforma essa porcentagem abstrata em um número com o qual você pode agir.</p><p>A predefinição simula um saldo de $30,000, $200 adicionados por mês, 4,5 por cento com capitalização diária (como a maioria dos bancos digitais credita os juros) ao longo de três anos, com a inflação ativada em 3 por cento para você ver se a conta está realmente preservando o poder de compra. Substitua 4,5 pelo APY que estão oferecendo a você.</p>
+  <h2>Comparando contas do jeito certo</h2>
+  <p>Informe o APY, não a taxa nominal, porque o APY já inclui o efeito da capitalização e é o que os bancos são obrigados a divulgar. Depois, confira três coisas que a taxa não diz:</p><ul><li><strong>Períodos promocionais.</strong> Algumas contas pagam uma taxa alta por três a seis meses e caem depois. Simule isso como dois cenários ou use a taxa menor para o período inteiro.</li><li><strong>Limites de saldo e faixas.</strong> Uma ótima taxa nos primeiros $5,000 e uma taxa ruim acima disso é uma conta ruim para uma reserva de $30,000.</li><li><strong>Acesso e limites.</strong> Dinheiro de emergência precisa de acesso no mesmo dia ou no dia seguinte; contas com aviso prévio e CDBs pagam mais por você abrir mão disso.</li></ul><p>Rode o mesmo plano de depósitos a 0,5 por cento e à taxa de alto rendimento; a diferença no saldo final é o custo anual de não trocar de conta.</p>
+  <h2>Inflação e impostos sobre os juros da poupança</h2>
+  <p>Com a inflação ativada, a calculadora mostra o saldo em dinheiro de hoje. Se o APY estiver abaixo da inflação, essa linha cai mesmo com o saldo nominal subindo, que é o retrato honesto de uma conta poupança em um ano de inflação alta. Os juros também costumam ser tributados como renda, então um APY de 4,5 por cento pode ficar perto de 3,4 por cento após impostos para um poupador de faixa intermediária.</p><p>Nada disso torna uma conta de alto rendimento uma má escolha para reserva de emergência ou meta de curto prazo; só significa que ela é um lugar para guardar dinheiro com segurança, não para construir patrimônio ao longo de décadas. Conteúdo educativo, não é consultoria financeira; as taxas são ilustrativas.</p>
+  <h2>Perguntas frequentes</h2>
+  <div class="faq">
+    <details><summary>Quanto rendem $30,000 em uma conta de alto rendimento?</summary><p>Com APY de 4,5 por cento, cerca de $1,380 no primeiro ano, e mais nos anos seguintes conforme os juros se acumulam e se você continuar depositando. A tabela anual acima mostra o caminho exato.</p></details>
+    <details><summary>Vale a pena ter uma conta de alto rendimento com saldos pequenos?</summary><p>Sim, já que trocar é grátis. Sobre $5,000, a diferença em relação a uma conta comum fica em torno de $200 por ano, que se capitalizam como todo o resto.</p></details>
+    <details><summary>Por que o saldo ajustado pela inflação cresce tão devagar?</summary><p>Porque o retorno real é o APY menos a inflação. Com APY de 4,5 por cento e inflação de 3 por cento, o poder de compra cresce cerca de 1,5 por cento ao ano.</p></details>
+    <details><summary>Posso simular uma queda na taxa depois do primeiro ano?</summary><p>Salve o primeiro ano como um cenário e crie um segundo com a taxa menor (GrowthCalc Pro), ou simplesmente rode o período inteiro com a taxa menor para uma estimativa conservadora.</p></details>
+  </div>
+  <p class="back-guide">Procurando o guia completo, dicas e o FAQ completo? Leia a <a href="/pt/">página principal do GrowthCalc</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Uma coleção de ferramentas grátis e privadas que rodam inteiramente no seu navegador. GrowthCalc é a calculadora de juros compostos da família, criada e mantida pela Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Mais ferramentas grátis</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Faturas</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Preços para freelancers</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compressor de imagens</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Juros compostos</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Sub-redes IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockups de capturas de tela</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockups de chat e post</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slides de carrossel</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formatos para redes sociais</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Molduras e mockups de fotos</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Sorteios no Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Consulta de IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Redimensionador de imagens e vídeos</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. Não é consultoria financeira. Apenas para fins educativos.</span>
+      <span><a href="/pt/privacy" data-i18n-href="/pt/privacy">Privacidade</a> · <a href="/pt/terms" data-i18n-href="/pt/terms">Termos</a> · <a href="#" data-action="cookie-settings">Configurações de cookies</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Fechar">✕</button>
+    <h3 id="proTitle">Faça upgrade para o GrowthCalc Pro <span class="pro-badge">VITALÍCIO</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>pagamento único</small></div>
+    <ul>
+      <li>Compare até 3 cenários em um gráfico</li>
+      <li>Calculadora de metas – descubra o aporte mensal necessário</li>
+      <li>Exportação CSV das tabelas anual e mensal</li>
+      <li>Relatório em PDF para imprimir</li>
+      <li>Atualizações vitalícias</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Seja Pro</button>
+    <p class="hint" style="margin-top:12px">Já comprou? <a href="#" data-action="toggle-license">Digite a chave de licença</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Chave de licença" aria-label="Chave de licença"><button class="btn" data-action="activate-license">Ativar</button></div>
+  </div>
+</div>
+<script src="/preset.js" data-q="p=30000&amp;m=200&amp;t=end&amp;r=4.5&amp;f=daily&amp;y=3&amp;g=0&amp;c=USD&amp;i=1&amp;ir=3"></script>
+<script src="/app.js"></script>
+</body>
+</html>

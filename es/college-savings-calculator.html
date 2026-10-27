@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de ahorro para la universidad – Cuánto ahorrar por mes para la matrícula | GrowthCalc</title>
+  <meta name="description" content="Calculadora gratis de ahorro para la universidad. Proyecta un 529 o fondo educativo desde el nacimiento hasta los 18 con depósitos mensuales, crecimiento compuesto e inflación de la matrícula, año por año.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/es/college-savings-calculator">
+  <meta property="og:title" content="Calculadora de ahorro para la universidad – Cuánto ahorrar por mes para la matrícula | GrowthCalc">
+  <meta property="og:description" content="Calculadora gratis de ahorro para la universidad. Proyecta un 529 o fondo educativo desde el nacimiento hasta los 18 con depósitos mensuales, crecimiento compuesto e inflación de la matrícula, año por año.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calculadora de ahorro para la universidad – Cuánto ahorrar por mes para la matrícula | GrowthCalc">
+  <meta name="twitter:description" content="Calculadora gratis de ahorro para la universidad. Proyecta un 529 o fondo educativo desde el nacimiento hasta los 18 con depósitos mensuales, crecimiento compuesto e inflación de la matrícula, año por año.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GrowthCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Calculadora de ahorro para la universidad – Cuánto ahorrar por mes para la matrícula | GrowthCalc","description":"Calculadora gratis de ahorro para la universidad. Proyecta un 529 o fondo educativo desde el nacimiento hasta los 18 con depósitos mensuales, crecimiento compuesto e inflación de la matrícula, año por año.","url":"https://growthcalc-tool.vercel.app/college-savings-calculator","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Calculadora de ahorro para la universidad","item":"https://growthcalc-tool.vercel.app/college-savings-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto debería ahorrar por mes para la universidad?","acceptedAnswer":{"@type":"Answer","text":"Ahorrar $300 al mes desde el nacimiento al 6 por ciento da aproximadamente $115,000 a los 18. Usa el modo objetivo de GrowthCalc Pro con tu propia meta y edad de inicio para obtener la cifra mensual exacta."}},{"@type":"Question","name":"¿Qué tasa de inflación debo usar para la matrícula?","acceptedAnswer":{"@type":"Answer","text":"Históricamente, la matrícula ha subido entre 4 y 6 por ciento al año en EE. UU., por encima de la inflación general. Cinco por ciento es un supuesto de planificación habitual."}},{"@type":"Question","name":"¿Es demasiado tarde para empezar si mi hijo tiene 10 años?","acceptedAnswer":{"@type":"Answer","text":"No, pero la combinación cambia: con ocho años por delante, los aportes importan más que el crecimiento y el portafolio debería ser más conservador. Configura 8 años y compara las columnas de aportes e intereses."}},{"@type":"Question","name":"¿La calculadora maneja montos únicos más adelante?","acceptedAnswer":{"@type":"Answer","text":"No como eventos únicos. Aproxímalos subiendo el monto inicial o guardando un segundo escenario desde el año en que llega el monto único."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/college-savings-calculator">
+  <link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/college-savings-calculator">
+  <link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/college-savings-calculator">
+  <link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/college-savings-calculator">
+  <link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/college-savings-calculator">
+  <link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/college-savings-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/college-savings-calculator">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="es_ES">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/es/" aria-label="Inicio de GrowthCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Calculadora de interés compuesto</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Más herramientas"><span class="mt-label">Más herramientas</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Facturas</small></a>
+          <a href="https://ratecalc-tool.vercel.app"><span class="mi">R</span>RateCalc<small>Tarifas freelance</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>Códigos QR</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compresor de imágenes</small></a>
+          <a href="https://growthcalc-tool.vercel.app" class="current"><span class="mi">G</span>GrowthCalc<small>Interés compuesto</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Subredes IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockups de capturas</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockups de chats y posts</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slides para carrusel</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formatos para redes</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Marcos y mockups de fotos</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Sorteos de Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Consulta de IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Redimensionador de imágenes y videos</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">por <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Instala esta herramienta como app">⤓ Instalar</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Cambiar tema">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Ahorro · Educación</span>
+  <h1>Calculadora de ahorro para la universidad</h1>
+  <p class="tagline">Estima cómo crecen los ahorros mensuales desde el nacimiento de un hijo hasta los 18 años, con la inflación de la matrícula activada para medir el resultado frente a los costos futuros.</p>
+  <div class="badges">
+  <span class="badge">100 % gratis</span>
+  <span class="badge">Sin registro</span>
+  <span class="badge">Funciona en tu navegador</span>
+  <span class="badge">8 monedas</span>
+  <span class="badge">Enlace para compartir</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Tu plan</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Inversión inicial</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Aporte mensual</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Momento del aporte</label>
+            <select id="timing">
+              <option value="end">Al final de cada mes</option>
+              <option value="start">Al inicio de cada mes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Aumento anual del aporte (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Aumenta tu aporte cada año, por ejemplo con un aumento de sueldo.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Tasa de interés anual (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Frecuencia de capitalización</label>
+            <select id="freq">
+              <option value="daily">Diaria</option>
+              <option value="monthly" selected>Mensual</option>
+              <option value="quarterly">Trimestral</option>
+              <option value="annually">Anual</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Años de crecimiento</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Años de crecimiento (número)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Años de crecimiento (control deslizante)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Moneda</label>
+            <select id="currency">
+              <option value="USD">USD – Dólar estadounidense ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – Libra esterlina (£)</option>
+              <option value="CAD">CAD – Dólar canadiense</option>
+              <option value="AUD">AUD – Dólar australiano</option>
+              <option value="INR">INR – Rupia india (₹)</option>
+              <option value="MXN">MXN – Peso mexicano</option>
+              <option value="BRL">BRL – Real brasileño (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Ajustar por inflación</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Inflación anual esperada (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Inflación anual esperada %. Muestra cuánto vale tu saldo en dinero de hoy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copiar resumen</button>
+          <button class="btn" id="btnShare" type="button">🔗 Compartir enlace</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Restablecer</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Informe de interés compuesto</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Generado <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Tus resultados</h2>
+        <p class="k">Saldo final <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Aportes totales</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Interés total ganado</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Interés como % del saldo</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Saldo ajustado por inflación</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Tiempo de duplicación (regla del 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Tiempo de duplicación (exacto)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Crecimiento en el tiempo</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Comparar escenarios <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Guarda los datos actuales como escenario y luego cámbialos para ver la diferencia. Los escenarios guardados aparecen como líneas en el gráfico. Plan gratis: 1 escenario, Pro: hasta 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Nombre del escenario (p. ej., Agresivo 9%)" maxlength="40" aria-label="Nombre del escenario">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Guardar escenario</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Escenario</th><th class="num">Inicial</th><th class="num">Mensual</th><th class="num">Tasa</th><th class="num">Años</th><th class="num">Aportado</th><th class="num">Interés</th><th class="num">Saldo final</th><th class="num">vs. actual</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Calculadora de objetivos <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“Quiero llegar a X en el año Y: ¿qué aporte mensual necesito?” Usa tu inversión inicial, tasa, capitalización y configuración de aportes de arriba.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Monto objetivo</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Año objetivo (años desde hoy)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Calcular aporte mensual</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Desglose anual</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Detalle de la tabla">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Anual</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Mensual</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Imprimir informe <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Hazte Pro <span class="pro-badge">DE POR VIDA</span></h3>
+        <ul>
+          <li>Compara hasta 3 escenarios lado a lado</li>
+          <li>Calculadora de objetivos: calcula el monto mensual que necesitas</li>
+          <li>Exportación CSV de tablas anuales y mensuales</li>
+          <li>Informe PDF imprimible</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Hazte Pro – <span data-pro-price>$9</span> pago único</button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Haz crecer tu dinero, sin prisa</h3>
+        <p class="hint">Fundamentos de ahorro e inversión, calculadoras y nuevas herramientas gratis. No es asesoramiento financiero.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="tu@correo.com" aria-label="Correo electrónico" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Suscribirme</button>
+        </form>
+        <p class="hint tiny">Sin spam. Cancela cuando quieras.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Pon a trabajar la capitalización</h2>
+  <p class="hint">Enlaces de socios: podemos ganar una comisión si abres una cuenta, sin costo extra para ti. Esto no es una recomendación para invertir.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Más formas de usar GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/es/compound-interest-calculator-for-retirement">Calculadora de interés compuesto para la jubilación</a></li>
+      <li><a href="/es/roth-ira-growth-calculator">Calculadora de crecimiento de Roth IRA</a></li>
+      <li><a href="/es/house-down-payment-savings-calculator">Calculadora de ahorro para el pago inicial de una casa</a></li>
+      <li><a href="/es/college-savings-calculator" class="current" aria-current="page">Calculadora de ahorro para la universidad</a></li>
+      <li><a href="/es/how-much-will-10000-grow-in-10-years">¿Cuánto crecerán $10,000 en 10 años?</a></li>
+      <li><a href="/es/daily-compound-interest-calculator">Calculadora de interés compuesto diario</a></li>
+      <li><a href="/es/compound-interest-calculator-with-monthly-contributions">Calculadora de interés compuesto con aportes mensuales</a></li>
+      <li><a href="/es/high-yield-savings-account-calculator">Calculadora de cuenta de ahorro de alto rendimiento</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/es/">GrowthCalc</a> › Calculadora de ahorro para la universidad</p>
+  <h2>Calculadora de ahorro para la universidad: cómo funciona</h2>
+  <p>Los costos de educación han subido más rápido que la inflación general durante décadas, por eso el ahorro universitario es el objetivo donde la opción de inflación importa más. Un fondo que parece enorme en dólares de hoy puede cubrir la mitad de una carrera dentro de 18 años.</p><p>El ejemplo empieza al nacer con $2,000, agrega $300 al mes, supone un rendimiento del 6 por ciento con capitalización mensual (un portafolio 529 típico por edad que se vuelve más conservador a medida que se acerca la universidad) durante 18 años, y fija la inflación en 5 por ciento para aproximar el aumento de la matrícula. La línea "en dinero de hoy" te dice qué podrá comprar el saldo en términos de educación.</p>
+  <h2>Cómo fijar una meta realista</h2>
+  <p>Decide qué parte de los costos piensas cubrir: muchas familias apuntan a un tercio con ahorros, un tercio con ingresos del momento y un tercio con becas y préstamos. Luego ponle precio al objetivo: cuatro años en una universidad pública estatal cuestan hoy alrededor de $100,000 a $120,000 incluyendo alojamiento y comida, y las universidades privadas, dos o tres veces eso. Haz crecer ese número con la inflación de la matrícula hasta el año en que tu hijo empiece y compáralo con el saldo nominal de la tabla.</p><ul><li>Si puedes, concentra los aportes al principio: los primeros cinco años de aportes son los que más se capitalizan.</li><li>Usa el campo de aumento del aporte (por ejemplo, 3 por ciento al año) para reflejar el crecimiento del sueldo.</li><li>Los aportes de los abuelos pueden ir directo al monto inicial o a un segundo escenario.</li></ul>
+  <h2>Los supuestos de rendimiento cambian con la edad</h2>
+  <p>Los portafolios por edad empiezan con mucha renta variable y pasan a bonos y efectivo en la adolescencia, así que un único rendimiento para 18 años es una simplificación. Seis por ciento es un promedio combinado razonable; prueba también con 4 y 8 por ciento para ver el rango. La comparación de escenarios de GrowthCalc Pro muestra los tres en un solo gráfico.</p><p>El tratamiento fiscal de las cuentas educativas varía según el país y el estado (planes 529 en EE. UU., Junior ISA en el Reino Unido, RESP en Canadá) y no se modela aquí. Esta página es para planificación y educación, no asesoramiento financiero personal.</p>
+  <h2>Preguntas frecuentes</h2>
+  <div class="faq">
+    <details><summary>¿Cuánto debería ahorrar por mes para la universidad?</summary><p>Ahorrar $300 al mes desde el nacimiento al 6 por ciento da aproximadamente $115,000 a los 18. Usa el modo objetivo de GrowthCalc Pro con tu propia meta y edad de inicio para obtener la cifra mensual exacta.</p></details>
+    <details><summary>¿Qué tasa de inflación debo usar para la matrícula?</summary><p>Históricamente, la matrícula ha subido entre 4 y 6 por ciento al año en EE. UU., por encima de la inflación general. Cinco por ciento es un supuesto de planificación habitual.</p></details>
+    <details><summary>¿Es demasiado tarde para empezar si mi hijo tiene 10 años?</summary><p>No, pero la combinación cambia: con ocho años por delante, los aportes importan más que el crecimiento y el portafolio debería ser más conservador. Configura 8 años y compara las columnas de aportes e intereses.</p></details>
+    <details><summary>¿La calculadora maneja montos únicos más adelante?</summary><p>No como eventos únicos. Aproxímalos subiendo el monto inicial o guardando un segundo escenario desde el año en que llega el monto único.</p></details>
+  </div>
+  <p class="back-guide">¿Buscas la guía completa, consejos y todas las preguntas frecuentes? Lee la <a href="/es/">página principal de GrowthCalc</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Una colección de herramientas gratis y privadas que funcionan por completo en tu navegador. GrowthCalc es la calculadora de interés compuesto de la familia, creada y mantenida por Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Más herramientas gratis</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Facturas</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Tarifas freelance</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · Códigos QR</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compresor de imágenes</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Interés compuesto</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Subredes IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockups de capturas</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockups de chats y posts</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slides para carrusel</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formatos para redes</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Marcos y mockups de fotos</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Sorteos de Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Consulta de IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Redimensionador de imágenes y videos</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. No es asesoramiento financiero. Solo con fines educativos.</span>
+      <span><a href="/es/privacy" data-i18n-href="/es/privacy">Privacidad</a> · <a href="/es/terms" data-i18n-href="/es/terms">Términos</a> · <a href="#" data-action="cookie-settings">Configuración de cookies</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Cerrar">✕</button>
+    <h3 id="proTitle">Pásate a GrowthCalc Pro <span class="pro-badge">DE POR VIDA</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>pago único</small></div>
+    <ul>
+      <li>Compara hasta 3 escenarios en un solo gráfico</li>
+      <li>Calculadora de objetivos – calcula el aporte mensual que necesitas</li>
+      <li>Exportación CSV de tablas anuales y mensuales</li>
+      <li>Informe PDF imprimible</li>
+      <li>Actualizaciones de por vida</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Hazte Pro</button>
+    <p class="hint" style="margin-top:12px">¿Ya compraste? <a href="#" data-action="toggle-license">Ingresa la clave de licencia</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Clave de licencia" aria-label="Clave de licencia"><button class="btn" data-action="activate-license">Activar</button></div>
+  </div>
+</div>
+<script src="/preset.js" data-q="p=2000&amp;m=300&amp;t=end&amp;r=6&amp;f=monthly&amp;y=18&amp;g=3&amp;c=USD&amp;i=1&amp;ir=5"></script>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@
   <meta name="twitter:title" content="Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc">
   <meta name="twitter:description" content="Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.">
   <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
-  <meta name="theme-color" content="#f97316">
+  <meta name="theme-color" content="#050403">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,13 +26,25 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
   <script src="/monetize.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Roth IRA Growth Calculator – Max Contributions Over Time | GrowthCalc","description":"Free Roth IRA growth calculator. See what maxing out a Roth IRA each year could grow to by retirement, with a year-by-year split of contributions and growth.","url":"https://growthcalc-tool.vercel.app/roth-ira-growth-calculator","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Roth IRA Growth Calculator","item":"https://growthcalc-tool.vercel.app/roth-ira-growth-calculator"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much will a Roth IRA be worth in 30 years?","acceptedAnswer":{"@type":"Answer","text":"Maxing a $7,000 annual contribution at a 7 percent return grows to roughly $700,000 in 30 years, of which about $210,000 is contributions. Change the inputs above to match your own start date and return assumption."}},{"@type":"Question","name":"Should I contribute monthly or once a year?","acceptedAnswer":{"@type":"Answer","text":"Monthly from January, or a lump sum as early in the year as you can afford. Both beat waiting until the deadline because the money compounds longer."}},{"@type":"Question","name":"Is Roth growth really tax-free?","acceptedAnswer":{"@type":"Answer","text":"Qualified withdrawals after 59½ and once the account is five years old are federal-tax-free. Rules can change; this calculator does not model taxes."}},{"@type":"Question","name":"Can I model the catch-up contribution after 50?","acceptedAnswer":{"@type":"Answer","text":"Yes. Save the current plan as a scenario, then raise the monthly amount for the later years in a second scenario using the contribution increase field."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator">
+  <link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/roth-ira-growth-calculator">
+  <link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/roth-ira-growth-calculator">
+  <link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/roth-ira-growth-calculator">
+  <link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/roth-ira-growth-calculator">
+  <link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/roth-ira-growth-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/roth-ira-growth-calculator">
+  <!-- hreflang:end -->
 </head>
 <body>
 
@@ -45,7 +57,7 @@
     </a>
     <nav class="nav" aria-label="Main">
       <details class="more-tools">
-        <summary class="btn btn-ghost btn-sm">More tools ▾</summary>
+        <summary class="btn btn-ghost btn-sm" aria-label="More tools"><span class="mt-label">More tools</span> ▾</summary>
         <div class="menu">
           <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Invoices</small></a>
           <a href="https://ratecalc-tool.vercel.app"><span class="mi">R</span>RateCalc<small>Freelance rates</small></a>
@@ -59,14 +71,16 @@
           <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Social formats</small></a>
           <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Photo frames & mockups</small></a>
           <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Instagram giveaways</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>IP lookup</small></a>
           <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Image & video resizer</small></a>
         </div>
       </details>
       <span class="sep" aria-hidden="true"></span>
       <span class="brand-by">by <b>Be Management</b></span>
-      <button class="btn btn-sm hidden" id="installBtn" onclick="installApp()" title="Install this tool as an app">⤓ Install</button>
-      <button class="btn btn-primary btn-sm" onclick="openPro('nav')">Pro</button>
-      <button class="btn icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">◐</button>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Install this tool as an app">⤓ Install</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Toggle theme">◐</button>
     </nav>
     </div>
   </div>
@@ -263,12 +277,12 @@
           <li>CSV export of yearly &amp; monthly tables</li>
           <li>Printable PDF report</li>
         </ul>
-        <button class="btn btn-primary btn-block" onclick="openPro('sidebar')">Get Pro – <span data-pro-price>$9</span> one-time</button>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Get Pro – <span data-pro-price>$9</span> one-time</button>
       </div>
       <div class="card lead-card" id="leadCard" hidden>
         <h3>Grow your money, slowly</h3>
         <p class="hint">Saving and investing basics, calculators and new free tools. Not financial advice.</p>
-        <form class="lead-form" onsubmit="return subscribeNewsletter(event)">
+        <form class="lead-form" data-action="newsletter">
           <input type="email" name="email" required placeholder="you@email.com" aria-label="Email address" autocomplete="email">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
           <button class="btn btn-primary" type="submit">Subscribe</button>
@@ -346,19 +360,20 @@
         <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Social formats</a></li>
         <li><a href="https://framelab-tool.vercel.app">Frame Lab · Photo frames & mockups</a></li>
         <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Instagram giveaways</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · IP lookup</a></li>
         <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Image & video resizer</a></li>
       </ul>
     </div>
     <div class="footer-meta">
       <span>© <span data-year></span> Be Management · GrowthCalc. Not financial advice. For education only.</span>
-      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+      <span><a href="/privacy" data-i18n-href="/privacy">Privacy</a> · <a href="/terms" data-i18n-href="/terms">Terms</a> · <a href="#" data-action="cookie-settings">Cookie settings</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
     </div>
   </div>
 </footer>
 
 <div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
   <div class="card">
-    <button class="btn btn-sm close" onclick="closePro()" aria-label="Close">✕</button>
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Close">✕</button>
     <h3 id="proTitle">Upgrade to GrowthCalc Pro <span class="pro-badge">LIFETIME</span></h3>
     <div class="price"><span id="proPrice"></span> <small>one-time</small></div>
     <ul>
@@ -368,12 +383,12 @@
       <li>Printable PDF report</li>
       <li>Lifetime updates</li>
     </ul>
-    <button class="btn btn-primary btn-block" onclick="goCheckout()">Get Pro</button>
-    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" onclick="document.getElementById('licenseRow').classList.toggle('hidden');return false">Enter license key</a></p>
-    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" onclick="activateLicense(document.getElementById('licenseKey').value)">Activate</button></div>
+    <button class="btn btn-primary btn-block" data-action="checkout">Get Pro</button>
+    <p class="hint" style="margin-top:12px">Already purchased? <a href="#" data-action="toggle-license">Enter license key</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="License key" aria-label="License key"><button class="btn" data-action="activate-license">Activate</button></div>
   </div>
 </div>
-<script>(function(){var q="p=5000&m=583&t=start&r=7&f=monthly&y=35&g=0&c=USD&i=1&ir=3";if(q&&!location.search){try{history.replaceState(null,"",location.pathname+"?"+q+location.hash);}catch(e){}}})();</script>
+<script src="/preset.js" data-q="p=5000&amp;m=583&amp;t=start&amp;r=7&amp;f=monthly&amp;y=35&amp;g=0&amp;c=USD&amp;i=1&amp;ir=3"></script>
 <script src="/app.js"></script>
 </body>
 </html>

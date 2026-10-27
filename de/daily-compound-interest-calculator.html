@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zinseszinsrechner mit täglicher Verzinsung – täglich vs. monatlich vs. jährlich | GrowthCalc</title>
+  <meta name="description" content="Kostenloser Zinseszinsrechner mit täglicher Verzinsung. Vergleiche tägliche, monatliche, vierteljährliche und jährliche Verzinsung beim Sparen und sieh den echten Unterschied in Dollar über die Zeit.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator">
+  <meta property="og:title" content="Zinseszinsrechner mit täglicher Verzinsung – täglich vs. monatlich vs. jährlich | GrowthCalc">
+  <meta property="og:description" content="Kostenloser Zinseszinsrechner mit täglicher Verzinsung. Vergleiche tägliche, monatliche, vierteljährliche und jährliche Verzinsung beim Sparen und sieh den echten Unterschied in Dollar über die Zeit.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Zinseszinsrechner mit täglicher Verzinsung – täglich vs. monatlich vs. jährlich | GrowthCalc">
+  <meta name="twitter:description" content="Kostenloser Zinseszinsrechner mit täglicher Verzinsung. Vergleiche tägliche, monatliche, vierteljährliche und jährliche Verzinsung beim Sparen und sieh den echten Unterschied in Dollar über die Zeit.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GrowthCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Zinseszinsrechner mit täglicher Verzinsung – täglich vs. monatlich vs. jährlich | GrowthCalc","description":"Kostenloser Zinseszinsrechner mit täglicher Verzinsung. Vergleiche tägliche, monatliche, vierteljährliche und jährliche Verzinsung beim Sparen und sieh den echten Unterschied in Dollar über die Zeit.","url":"https://growthcalc-tool.vercel.app/daily-compound-interest-calculator","isPartOf":{"@type":"WebSite","name":"GrowthCalc","url":"https://growthcalc-tool.vercel.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GrowthCalc","item":"https://growthcalc-tool.vercel.app/"},{"@type":"ListItem","position":2,"name":"Zinseszinsrechner mit täglicher Verzinsung","item":"https://growthcalc-tool.vercel.app/daily-compound-interest-calculator"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ist tägliche Verzinsung besser als monatliche?","acceptedAnswer":{"@type":"Answer","text":"Geringfügig. Bei üblichen Sparzinsen beträgt der Unterschied beim APY ein paar Hundertstel Prozent – bei einem Guthaben von $20,000 sind das ein paar Dollar pro Jahr."}},{"@type":"Question","name":"Wie rechne ich einen Nominalzins in den APY um?","acceptedAnswer":{"@type":"Answer","text":"APY = (1 + r/n)^n − 1, wobei n die Anzahl der Zinsperioden pro Jahr ist. Gib hier den Nominalzins ein und wähle die Häufigkeit; das Endguthaben spiegelt den effektiven Jahreszins (APY) wider."}},{"@type":"Question","name":"Verzinst der Rechner auch die Einzahlungen täglich?","acceptedAnswer":{"@type":"Answer","text":"Einzahlungen werden monatlich hinzugefügt und ab dann zur gewählten Zinsperiode verzinst – so funktionieren die meisten Konten."}},{"@type":"Question","name":"Kann ich den Unterschied zwischen den Zinsperioden nebeneinander sehen?","acceptedAnswer":{"@type":"Answer","text":"Ja, mit GrowthCalc Pro: Speichere die tägliche Variante als Szenario, stell auf jährlich um und vergleiche beide im Diagramm und in der Tabelle."}}]}</script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/daily-compound-interest-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/daily-compound-interest-calculator">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="de_DE">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/de/" aria-label="GrowthCalc Startseite">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Zinseszinsrechner</span></span>
+    </a>
+    <nav class="nav" aria-label="Hauptmenü">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Weitere Tools"><span class="mt-label">Weitere Tools</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Rechnungen</small></a>
+          <a href="https://ratecalc-tool.vercel.app"><span class="mi">R</span>RateCalc<small>Freelancer-Stundensätze</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>QR-Codes</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Bildkomprimierung</small></a>
+          <a href="https://growthcalc-tool.vercel.app" class="current"><span class="mi">G</span>GrowthCalc<small>Zinseszins</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>IP-Subnetze</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Screenshot-Mockups</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Chat- & Post-Mockups</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Karussell-Slides</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Social-Media-Formate</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Fotorahmen & Mockups</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Instagram-Gewinnspiele</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>IP-Abfrage</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Bild- & Videogrößen ändern</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">von <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Installiere dieses Tool als App">⤓ Installieren</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Design wechseln">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Sparen · Zinsperiode</span>
+  <h1>Zinseszinsrechner mit täglicher Verzinsung</h1>
+  <p class="tagline">Berechne das Wachstum bei täglicher Verzinsung und vergleiche es mit monatlicher und jährlicher Verzinsung, um zu sehen, wie viel die Häufigkeit wirklich bringt.</p>
+  <div class="badges">
+  <span class="badge">100 % kostenlos</span>
+  <span class="badge">Ohne Anmeldung</span>
+  <span class="badge">Funktioniert in deinem Browser</span>
+  <span class="badge">8 Währungen</span>
+  <span class="badge">Teilbarer Link</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Dein Plan</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Anfangsinvestition</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Monatliche Sparrate</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Zeitpunkt der Einzahlung</label>
+            <select id="timing">
+              <option value="end">Ende jedes Monats</option>
+              <option value="start">Anfang jedes Monats</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Jährliche Erhöhung der Sparrate (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Erhöhe deine Sparrate jedes Jahr, z. B. mit einer Gehaltserhöhung.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Jahreszins (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Zinsperiode</label>
+            <select id="freq">
+              <option value="daily">Täglich</option>
+              <option value="monthly" selected>Monatlich</option>
+              <option value="quarterly">Vierteljährlich</option>
+              <option value="annually">Jährlich</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Anlagedauer in Jahren</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Anlagedauer in Jahren (Zahl)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Anlagedauer in Jahren (Regler)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Währung</label>
+            <select id="currency">
+              <option value="USD">USD – US-Dollar ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – Britisches Pfund (£)</option>
+              <option value="CAD">CAD – Kanadischer Dollar</option>
+              <option value="AUD">AUD – Australischer Dollar</option>
+              <option value="INR">INR – Indische Rupie (₹)</option>
+              <option value="MXN">MXN – Mexikanischer Peso</option>
+              <option value="BRL">BRL – Brasilianischer Real (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Inflation berücksichtigen</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Erwartete jährliche Inflation (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Erwartete jährliche Inflation in %. Zeigt, was dein Guthaben in heutigem Geld wert ist.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Zusammenfassung kopieren</button>
+          <button class="btn" id="btnShare" type="button">🔗 Link teilen</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Zurücksetzen</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Zinseszins-Bericht</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Erstellt am <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Deine Ergebnisse</h2>
+        <p class="k">Endguthaben <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Summe der Einzahlungen</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Zinserträge gesamt</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Zinsen in % des Guthabens</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Inflationsbereinigtes Guthaben</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Verdopplungszeit (72er-Regel)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Verdopplungszeit (exakt)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Wachstum im Zeitverlauf</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Szenarien vergleichen <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Speichere die aktuellen Eingaben als Szenario und ändere sie dann, um den Unterschied zu sehen. Gespeicherte Szenarien erscheinen als Linien im Diagramm. Kostenlos: 1 Szenario, Pro: bis zu 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Name des Szenarios (z. B. Offensiv 9%)" maxlength="40" aria-label="Name des Szenarios">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Szenario speichern</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Szenario</th><th class="num">Anfangsbetrag</th><th class="num">Monatlich</th><th class="num">Zinssatz</th><th class="num">Jahre</th><th class="num">Eingezahlt</th><th class="num">Zinsen</th><th class="num">Endguthaben</th><th class="num">vs. aktuell</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Sparziel-Rechner <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">„Ich will bis Jahr Y auf X kommen – welche monatliche Sparrate brauche ich?“ Nutzt deine Anfangsinvestition, deinen Zinssatz, die Zinsperiode und die Einstellungen zur Sparrate von oben.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Zielbetrag</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Zieljahr (Jahre ab heute)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Monatliche Sparrate berechnen</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Jährliche Aufschlüsselung</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Tabellendetail">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Jährlich</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Monatlich</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Bericht drucken <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Pro holen <span class="pro-badge">LEBENSLANG</span></h3>
+        <ul>
+          <li>Bis zu 3 Szenarien nebeneinander vergleichen</li>
+          <li>Sparziel-Rechner: Berechne den nötigen Monatsbetrag</li>
+          <li>CSV-Export der Jahres- &amp; Monatstabellen</li>
+          <li>Druckbarer PDF-Bericht</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Pro holen – einmalig <span data-pro-price>$9</span></button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Lass dein Geld wachsen, Schritt für Schritt</h3>
+        <p class="hint">Grundlagen zu Sparen und Investieren, Rechner und neue kostenlose Tools. Keine Finanzberatung.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="du@email.com" aria-label="E-Mail-Adresse" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Abonnieren</button>
+        </form>
+        <p class="hint tiny">Kein Spam. Jederzeit abbestellbar.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Lass den Zinseszins für dich arbeiten</h2>
+  <p class="hint">Partnerlinks – wir erhalten ggf. eine Provision, wenn du ein Konto eröffnest, ohne Mehrkosten für dich. Das ist keine Anlageempfehlung.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Weitere Einsatzmöglichkeiten von GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/de/compound-interest-calculator-for-retirement">Zinseszinsrechner für die Altersvorsorge</a></li>
+      <li><a href="/de/roth-ira-growth-calculator">Roth-IRA-Wachstumsrechner</a></li>
+      <li><a href="/de/house-down-payment-savings-calculator">Sparrechner für das Eigenkapital beim Hauskauf</a></li>
+      <li><a href="/de/college-savings-calculator">Rechner für das Studiensparen</a></li>
+      <li><a href="/de/how-much-will-10000-grow-in-10-years">Wie stark wachsen $10,000 in 10 Jahren?</a></li>
+      <li><a href="/de/daily-compound-interest-calculator" class="current" aria-current="page">Zinseszinsrechner mit täglicher Verzinsung</a></li>
+      <li><a href="/de/compound-interest-calculator-with-monthly-contributions">Zinseszinsrechner mit monatlicher Sparrate</a></li>
+      <li><a href="/de/high-yield-savings-account-calculator">Rechner für Hochzins-Sparkonten</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <p class="breadcrumb"><a href="/de/">GrowthCalc</a> › Zinseszinsrechner mit täglicher Verzinsung</p>
+  <h2>Zinseszinsrechner mit täglicher Verzinsung: So funktioniert er</h2>
+  <p>Banken werben gern mit täglicher Verzinsung, weil das nach mehr Zinsen klingt – und technisch stimmt das auch. Die Frage ist, wie viel mehr. Bei einem Sparkonto mit 4.5 Prozent beträgt der Unterschied zwischen täglicher und monatlicher Verzinsung auf $20,000 über fünf Jahre ein paar Dollar. Der Unterschied zwischen 4.5 und 4.0 Prozent beträgt ein paar hundert.</p><p>Die Voreinstellung stellt GrowthCalc auf tägliche Verzinsung zu 4.5 Prozent bei einem Guthaben von $20,000 mit $250 monatlicher Einzahlung über fünf Jahre – ein typisches Hochzins-Sparkonto. Stell die Zinsperiode auf monatlich oder jährlich um und beobachte das Endguthaben; die Lücke ist kleiner, als die meisten erwarten.</p>
+  <h2>So wird die tägliche Verzinsung berechnet</h2>
+  <p>Bei täglicher Verzinsung teilt die Bank den Jahreszins durch 365, wendet diesen Bruchteil jeden Tag an, und die Zinsen des nächsten Tages werden auf das etwas größere Guthaben berechnet. Die effektive Jahresrendite (APY) beträgt (1 + r/365)<sup>365</sup> − 1. Bei einem Nominalzins von 4,5 Prozent sind das 4,60 Prozent APY; monatliche Verzinsung ergibt 4,59 Prozent, jährliche Verzinsung genau 4,50 Prozent. GrowthCalc simuliert Monat für Monat mit dem effektiven Monatszins für die gewählte Zinsperiode, sodass Einzahlungen jeden Monat addiert werden – unabhängig davon, wie oft Zinsen gutgeschrieben werden.</p><ul><li>Vergleiche bei der Kontowahl den effektiven Jahreszins (APY), nicht den Nominalzins.</li><li>Ein um 0,25 Prozentpunkte höherer Zins schlägt jeden Vorteil durch die Zinsperiode.</li><li>Zinsen sind in der Regel im Jahr der Gutschrift steuerpflichtig.</li></ul>
+  <h2>Wann die Zinsperiode wirklich zählt</h2>
+  <p>Die Zinsperiode wird relevant, wenn die Zinsen hoch oder die Guthaben groß sind: Bei $500,000 zu 8 Prozent unterscheiden sich tägliche und jährliche Verzinsung um etwa $1,600 pro Jahr. Umgekehrt zählt sie auch bei Schulden. Kreditkarten verzinsen meist täglich – ein Grund, warum Salden schneller wachsen, als der angegebene Jahreszins vermuten lässt; es gilt dieselbe Rechenlogik, nur stehst du auf der falschen Seite.</p><p>Für die meisten Sparer ist der praktische Rat einfach: Wähle den höchsten APY ohne Gebühren, automatisiere die Einzahlungen und lass die Zeit den Zinseszins erledigen. Keine Finanzberatung; die gezeigten Zinssätze sind Beispiele, keine Angebote.</p>
+  <h2>Häufig gestellte Fragen</h2>
+  <div class="faq">
+    <details><summary>Ist tägliche Verzinsung besser als monatliche?</summary><p>Geringfügig. Bei üblichen Sparzinsen beträgt der Unterschied beim APY ein paar Hundertstel Prozent – bei einem Guthaben von $20,000 sind das ein paar Dollar pro Jahr.</p></details>
+    <details><summary>Wie rechne ich einen Nominalzins in den APY um?</summary><p>APY = (1 + r/n)^n − 1, wobei n die Anzahl der Zinsperioden pro Jahr ist. Gib hier den Nominalzins ein und wähle die Häufigkeit; das Endguthaben spiegelt den effektiven Jahreszins (APY) wider.</p></details>
+    <details><summary>Verzinst der Rechner auch die Einzahlungen täglich?</summary><p>Einzahlungen werden monatlich hinzugefügt und ab dann zur gewählten Zinsperiode verzinst – so funktionieren die meisten Konten.</p></details>
+    <details><summary>Kann ich den Unterschied zwischen den Zinsperioden nebeneinander sehen?</summary><p>Ja, mit GrowthCalc Pro: Speichere die tägliche Variante als Szenario, stell auf jährlich um und vergleiche beide im Diagramm und in der Tabelle.</p></details>
+  </div>
+  <p class="back-guide">Du suchst die vollständige Anleitung, Tipps und alle FAQ? Lies die <a href="/de/">GrowthCalc-Hauptseite</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Eine Sammlung kostenloser, privater Tools, die komplett in deinem Browser laufen. GrowthCalc ist der Zinseszinsrechner der Familie, entwickelt und betreut von Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Weitere kostenlose Tools</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Rechnungen</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Freelancer-Stundensätze</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · QR-Codes</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Bildkomprimierung</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Zinseszins</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · IP-Subnetze</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Screenshot-Mockups</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Chat- &amp; Post-Mockups</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Karussell-Slides</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Social-Media-Formate</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Fotorahmen &amp; Mockups</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Instagram-Gewinnspiele</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · IP-Abfrage</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Bild- &amp; Video-Größenänderung</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. Keine Finanzberatung. Nur zu Bildungszwecken.</span>
+      <span><a href="/de/privacy" data-i18n-href="/de/privacy">Datenschutz</a> · <a href="/de/terms" data-i18n-href="/de/terms">Nutzungsbedingungen</a> · <a href="#" data-action="cookie-settings">Cookie-Einstellungen</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Schließen">✕</button>
+    <h3 id="proTitle">Upgrade auf GrowthCalc Pro <span class="pro-badge">LEBENSLANG</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>einmalig</small></div>
+    <ul>
+      <li>Bis zu 3 Szenarien in einem Diagramm vergleichen</li>
+      <li>Sparziel-Rechner – berechne die nötige monatliche Sparrate</li>
+      <li>CSV-Export der Jahres- und Monatstabellen</li>
+      <li>Druckbarer PDF-Bericht</li>
+      <li>Lebenslange Updates</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Pro holen</button>
+    <p class="hint" style="margin-top:12px">Schon gekauft? <a href="#" data-action="toggle-license">Lizenzschlüssel eingeben</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Lizenzschlüssel" aria-label="Lizenzschlüssel"><button class="btn" data-action="activate-license">Aktivieren</button></div>
+  </div>
+</div>
+<script src="/preset.js" data-q="p=20000&amp;m=250&amp;t=end&amp;r=4.5&amp;f=daily&amp;y=5&amp;g=0&amp;c=USD&amp;i=0&amp;ir=3"></script>
+<script src="/app.js"></script>
+</body>
+</html>

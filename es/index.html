@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de interés compuesto – Mira cómo crece tu dinero (gratis) | GrowthCalc</title>
+  <meta name="description" content="Calculadora de interés compuesto gratis con aportes mensuales, ajuste por inflación, gráfico de crecimiento interactivo y tabla de desglose anual o mensual. Sin registro.">
+  <link rel="canonical" href="https://growthcalc-tool.vercel.app/es/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthcalc-tool.vercel.app/es/">
+  <meta property="og:title" content="Calculadora de interés compuesto – Mira cómo crece tu dinero | GrowthCalc">
+  <meta property="og:description" content="Mira exactamente cómo se capitalizan tus ahorros con aportes mensuales, ajuste por inflación, gráficos y una tabla año por año. 100 % gratis, funciona en tu navegador.">
+  <meta property="og:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta property="og:site_name" content="GrowthCalc">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calculadora de interés compuesto – GrowthCalc">
+  <meta name="twitter:description" content="Calculadora de interés compuesto gratis con aportes, ajuste por inflación, gráfico y desglose anual.">
+  <meta name="twitter:image" content="https://growthcalc-tool.vercel.app/favicon.svg">
+  <meta name="theme-color" content="#050403">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GrowthCalc">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"GrowthCalc – Calculadora de interés compuesto","url":"https://growthcalc-tool.vercel.app/","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculadora de interés compuesto gratis con aportes mensuales, ajuste por inflación, gráfico interactivo y tabla de desglose anual.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Aportes mensuales con aumento anual","Capitalización diaria, mensual, trimestral o anual","Resultados ajustados por inflación","Gráfico de crecimiento","Tabla de desglose anual y mensual","Enlaces para compartir"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cómo se calcula el interés compuesto?","acceptedAnswer":{"@type":"Answer","text":"Para un monto único la fórmula es A = P(1 + r/n)^(nt), donde P es el monto inicial, r la tasa anual en decimal, n la cantidad de períodos de capitalización por año y t la cantidad de años. GrowthCalc convierte tu tasa en una tasa mensual efectiva, (1 + r/n)^(n/12) − 1, y luego simula cada mes: aplica el interés de ese mes al saldo y suma tu aporte al inicio o al final del mes. Sumar esos pasos da el resultado exacto tanto para el depósito inicial como para la serie de aportes."}},{"@type":"Question","name":"¿Qué tasa de interés debo usar?","acceptedAnswer":{"@type":"Answer","text":"Usa una tasa acorde a dónde está realmente el dinero. Una cuenta de ahorro de alto rendimiento puede pagar 3–5%, los bonos aproximadamente 4–6%, y un fondo indexado amplio de acciones históricamente ha rendido alrededor de 10% anual antes de inflación, o cerca de 7% en términos reales, en períodos largos. Muchos planificadores usan 6–8% para inversiones diversificadas de largo plazo. Si tienes dudas, prueba un escenario conservador y uno optimista y compáralos."}},{"@type":"Question","name":"¿Cuál es la diferencia entre la capitalización mensual y la anual?","acceptedAnswer":{"@type":"Answer","text":"Con capitalización anual, el interés se acredita una vez al año; con capitalización mensual, cada mes se acredita una doceava parte de la tasa anual, que de inmediato empieza a generar interés propio. Cuanto más seguido se capitaliza el interés, mayor es el rendimiento anual efectivo, pero la diferencia es modesta: 7% con capitalización mensual equivale a un 7.23% efectivo anual, y la capitalización diaria da 7.25%. El tiempo que inviertes importa mucho más que la frecuencia de capitalización."}},{"@type":"Question","name":"¿Esta calculadora de interés compuesto es gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí. La calculadora, el gráfico, las tablas anual y mensual, el ajuste por inflación, los enlaces para compartir y la copia del resumen son completamente gratis y sin registro. Una mejora Pro opcional de pago único agrega comparación de escenarios, calculadora de objetivos, exportación CSV y un informe imprimible."}},{"@type":"Question","name":"¿La calculadora incluye impuestos o comisiones?","acceptedAnswer":{"@type":"Answer","text":"No. Los resultados son cifras brutas antes de impuestos, comisiones de fondos, cargos de plataforma o costos de operación. Para aproximar su efecto, baja la tasa de interés que ingresas: por ejemplo, usa 6.5% en lugar de 7% para considerar una comisión anual del fondo de 0.5%, o redúcela aún más por impuestos sobre intereses o dividendos en una cuenta gravada."}},{"@type":"Question","name":"¿Qué es la regla del 72?","acceptedAnswer":{"@type":"Answer","text":"La regla del 72 es un atajo mental para saber cuánto tarda el dinero en duplicarse: divide 72 por la tasa de interés anual en porcentaje. Al 7% da aproximadamente 10.3 años; al 10%, unos 7.2 años. La cifra exacta es ln(2) ÷ ln(1 + r), que GrowthCalc también muestra. La regla es más precisa para tasas de entre aproximadamente 6% y 10%."}}]}</script>
+  <script src="/config.js"></script>
+  <script src="/i18n.js"></script>
+  <script src="/consent.js"></script>
+  <script src="/monetize.js"></script>
+  <!-- hreflang:start -->
+  <meta name="bm-langs" content="en,es,pt,fr,de,it">
+  <link rel="alternate" hreflang="en" href="https://growthcalc-tool.vercel.app/">
+  <link rel="alternate" hreflang="es" href="https://growthcalc-tool.vercel.app/es/">
+  <link rel="alternate" hreflang="pt" href="https://growthcalc-tool.vercel.app/pt/">
+  <link rel="alternate" hreflang="fr" href="https://growthcalc-tool.vercel.app/fr/">
+  <link rel="alternate" hreflang="de" href="https://growthcalc-tool.vercel.app/de/">
+  <link rel="alternate" hreflang="it" href="https://growthcalc-tool.vercel.app/it/">
+  <link rel="alternate" hreflang="x-default" href="https://growthcalc-tool.vercel.app/">
+  <!-- hreflang:end -->
+  <meta property="og:locale" content="es_ES">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+    <a class="brand" href="/es/" aria-label="Inicio de GrowthCalc">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><span class="brand-name">GrowthCalc</span><span class="brand-desc">Calculadora de interés compuesto</span></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <details class="more-tools">
+        <summary class="btn btn-ghost btn-sm" aria-label="Más herramientas"><span class="mt-label">Más herramientas</span> ▾</summary>
+        <div class="menu">
+          <a href="https://quickinvoice-tool.vercel.app"><span class="mi">Q</span>QuickInvoice<small>Facturas</small></a>
+          <a href="https://ratecalc-tool.vercel.app"><span class="mi">R</span>RateCalc<small>Tarifas freelance</small></a>
+          <a href="https://qrforge-tool.vercel.app"><span class="mi">Q</span>QRForge<small>Códigos QR</small></a>
+          <a href="https://squish-tool.vercel.app"><span class="mi">S</span>Squish<small>Compresor de imágenes</small></a>
+          <a href="https://growthcalc-tool.vercel.app" class="current"><span class="mi">G</span>GrowthCalc<small>Interés compuesto</small></a>
+          <a href="https://subnetkit-tool.vercel.app"><span class="mi">N</span>SubnetKit<small>Subredes IP</small></a>
+          <a href="https://shotstudio-tool.vercel.app"><span class="mi">S</span>Screenshot Studio<small>Mockups de capturas</small></a>
+          <a href="https://mockuplab-tool.vercel.app"><span class="mi">M</span>Social Mockup Lab<small>Mockups de chats y posts</small></a>
+          <a href="https://carouselmaker-tool.vercel.app"><span class="mi">C</span>Carousel Maker<small>Slides para carrusel</small></a>
+          <a href="https://creativeresize-tool.vercel.app"><span class="mi">R</span>Creative Resize<small>Formatos para redes</small></a>
+          <a href="https://framelab-tool.vercel.app"><span class="mi">F</span>Frame Lab<small>Marcos y mockups de fotos</small></a>
+          <a href="https://giveaway-tool.vercel.app"><span class="mi">G</span>Giveaway Picker<small>Sorteos de Instagram</small></a>
+          <a href="https://iplookup-tool.vercel.app"><span class="mi">I</span>IP Lookup<small>Consulta de IP</small></a>
+          <a href="https://sizeconverter-tool.vercel.app"><span class="mi">Z</span>Size Converter<small>Redimensionador de imágenes y videos</small></a>
+        </div>
+      </details>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="brand-by">por <b>Be Management</b></span>
+      <button class="btn btn-sm hidden" id="installBtn" data-action="install" title="Instala esta herramienta como app">⤓ Instalar</button>
+      <span class="lang-switch"><select id="langSelect" aria-label="Language" translate="no"><option value="en">EN</option></select></span>
+      <button class="btn btn-primary btn-sm" data-action="pro" data-arg="nav">Pro</button>
+      <button class="btn icon-btn" data-action="theme" aria-label="Cambiar tema">◐</button>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Be Management Tools · Inversión</span>
+  <h1>Calculadora de interés compuesto</h1>
+  <p class="tagline">Mira cómo crece un monto inicial más aportes mensuales año tras año, con un gráfico, una tabla de desglose completa y ajuste por inflación.</p>
+  <div class="badges">
+  <span class="badge">100 % gratis</span>
+  <span class="badge">Sin registro</span>
+  <span class="badge">Funciona en tu navegador</span>
+  <span class="badge">8 monedas</span>
+  <span class="badge">Enlace para compartir</span>
+  </div>
+</section>
+
+<main class="container">
+  <div class="tool-layout">
+    <div class="tool-col">
+
+      <!-- Inputs -->
+      <section class="card no-print" aria-labelledby="inputsTitle">
+        <h2 id="inputsTitle" class="card-title">Tu plan</h2>
+        <div class="grid-2">
+          <div class="field">
+            <label for="initial">Inversión inicial</label>
+            <input type="number" id="initial" min="0" step="100" value="10000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="monthly">Aporte mensual</label>
+            <input type="number" id="monthly" min="0" step="50" value="500" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="timing">Momento del aporte</label>
+            <select id="timing">
+              <option value="end">Al final de cada mes</option>
+              <option value="start">Al inicio de cada mes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="increase">Aumento anual del aporte (%)</label>
+            <input type="number" id="increase" min="0" max="50" step="0.5" value="0" inputmode="decimal">
+            <p class="hint">Aumenta tu aporte cada año, por ejemplo con un aumento de sueldo.</p>
+          </div>
+          <div class="field">
+            <label for="rate">Tasa de interés anual (%)</label>
+            <input type="number" id="rate" min="0" max="100" step="0.1" value="7" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="freq">Frecuencia de capitalización</label>
+            <select id="freq">
+              <option value="daily">Diaria</option>
+              <option value="monthly" selected>Mensual</option>
+              <option value="quarterly">Trimestral</option>
+              <option value="annually">Anual</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="row-between">
+            <label for="years">Años de crecimiento</label>
+            <input type="number" id="years" class="years-num" min="1" max="50" step="1" value="20" aria-label="Años de crecimiento (número)">
+          </div>
+          <input type="range" id="yearsRange" min="1" max="50" step="1" value="20" aria-label="Años de crecimiento (control deslizante)">
+          <div class="range-marks" aria-hidden="true"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="currency">Moneda</label>
+            <select id="currency">
+              <option value="USD">USD – Dólar estadounidense ($)</option>
+              <option value="EUR">EUR – Euro (€)</option>
+              <option value="GBP">GBP – Libra esterlina (£)</option>
+              <option value="CAD">CAD – Dólar canadiense</option>
+              <option value="AUD">AUD – Dólar australiano</option>
+              <option value="INR">INR – Rupia india (₹)</option>
+              <option value="MXN">MXN – Peso mexicano</option>
+              <option value="BRL">BRL – Real brasileño (R$)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="checkbox infl-toggle" for="inflToggle"><input type="checkbox" id="inflToggle"> Ajustar por inflación</label>
+            <div id="inflationField" class="hidden">
+              <label for="inflation" class="sr-only">Inflación anual esperada (%)</label>
+              <input type="number" id="inflation" min="0" max="50" step="0.1" value="3" inputmode="decimal" aria-describedby="inflHint">
+              <p class="hint" id="inflHint">Inflación anual esperada %. Muestra cuánto vale tu saldo en dinero de hoy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row actions">
+          <button class="btn" id="btnCopy" type="button">📋 Copiar resumen</button>
+          <button class="btn" id="btnShare" type="button">🔗 Compartir enlace</button>
+          <button class="btn btn-ghost" id="btnReset" type="button">↺ Restablecer</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="card results" aria-labelledby="resultsTitle" aria-live="polite">
+        <div class="print-only report-head">
+          <h2>GrowthCalc – Informe de interés compuesto</h2>
+          <p id="reportMeta"></p>
+          <p class="hint">Generado <span id="reportDate"></span> · https://growthcalc-tool.vercel.app/</p>
+        </div>
+        <h2 id="resultsTitle" class="card-title">Tus resultados</h2>
+        <p class="k">Saldo final <span id="resSub" class="res-sub"></span></p>
+        <div class="result-big" id="resFinal">$0</div>
+        <p class="today hidden" id="resToday"></p>
+        <div class="stats">
+          <div class="stat"><div class="k">Aportes totales</div><div class="v" id="statContrib">–</div></div>
+          <div class="stat"><div class="k">Interés total ganado</div><div class="v accent" id="statInterest">–</div></div>
+          <div class="stat"><div class="k">Interés como % del saldo</div><div class="v" id="statInterestPct">–</div></div>
+          <div class="stat hidden" id="statInflationWrap"><div class="k">Saldo ajustado por inflación</div><div class="v" id="statInflation">–</div></div>
+          <div class="stat"><div class="k">Tiempo de duplicación (regla del 72)</div><div class="v" id="statRule72">–</div></div>
+          <div class="stat"><div class="k">Tiempo de duplicación (exacto)</div><div class="v" id="statExact">–</div></div>
+        </div>
+
+        <h3 class="chart-title">Crecimiento en el tiempo</h3>
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" viewBox="0 0 720 320" role="img" aria-label="Stacked bar chart of contributions and interest by year" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-tip hidden" id="chartTip" role="status"></div>
+        </div>
+        <div class="legend" id="chartLegend"></div>
+      </section>
+
+      <!-- Scenarios (Pro: up to 3) -->
+      <section class="card no-print" aria-labelledby="scenTitle">
+        <div class="row-between">
+          <h2 id="scenTitle" class="card-title">Comparar escenarios <span class="pro-badge" data-pro-lock title="Free: 1 scenario · Pro: up to 3">PRO</span></h2>
+        </div>
+        <p class="hint">Guarda los datos actuales como escenario y luego cámbialos para ver la diferencia. Los escenarios guardados aparecen como líneas en el gráfico. Plan gratis: 1 escenario, Pro: hasta 3.</p>
+        <div class="row">
+          <input type="text" id="scenarioName" placeholder="Nombre del escenario (p. ej., Agresivo 9%)" maxlength="40" aria-label="Nombre del escenario">
+          <button class="btn btn-primary" id="btnSaveScenario" type="button">＋ Guardar escenario</button>
+        </div>
+        <div class="chips" id="scenarioList"></div>
+        <div class="table-wrap hidden" id="compareWrap">
+          <table>
+            <thead><tr><th>Escenario</th><th class="num">Inicial</th><th class="num">Mensual</th><th class="num">Tasa</th><th class="num">Años</th><th class="num">Aportado</th><th class="num">Interés</th><th class="num">Saldo final</th><th class="num">vs. actual</th></tr></thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Goal mode (Pro) -->
+      <section class="card no-print goal-card" aria-labelledby="goalTitle">
+        <h2 id="goalTitle" class="card-title">Calculadora de objetivos <span class="pro-badge" data-pro-lock>PRO</span></h2>
+        <p class="hint">“Quiero llegar a X en el año Y: ¿qué aporte mensual necesito?” Usa tu inversión inicial, tasa, capitalización y configuración de aportes de arriba.</p>
+        <div class="grid-2">
+          <div class="field">
+            <label for="goalTarget">Monto objetivo</label>
+            <input type="number" id="goalTarget" min="0" step="1000" value="1000000" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="goalYears">Año objetivo (años desde hoy)</label>
+            <input type="number" id="goalYears" min="1" max="50" step="1" value="20">
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnGoal" type="button">🎯 Calcular aporte mensual</button>
+        <p class="goal-result" id="goalResult"></p>
+      </section>
+
+      <!-- Table -->
+      <section class="card" aria-labelledby="tableTitle">
+        <div class="row-between table-head no-print">
+          <h2 id="tableTitle" class="card-title">Desglose anual</h2>
+          <div class="row">
+            <div class="segmented" role="group" aria-label="Detalle de la tabla">
+              <button type="button" class="seg active" id="viewYearly" aria-pressed="true">Anual</button>
+              <button type="button" class="seg" id="viewMonthly" aria-pressed="false">Mensual</button>
+            </div>
+            <button class="btn btn-sm" id="btnCsv" type="button">⬇ CSV <span class="pro-badge" data-pro-lock>PRO</span></button>
+            <button class="btn btn-sm" id="btnPrint" type="button">🖨 Imprimir informe <span class="pro-badge" data-pro-lock>PRO</span></button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-slot" data-slot="sidebar-1"></div>
+      <div class="card pro-card">
+        <h3>Hazte Pro <span class="pro-badge">DE POR VIDA</span></h3>
+        <ul>
+          <li>Compara hasta 3 escenarios lado a lado</li>
+          <li>Calculadora de objetivos: calcula el monto mensual que necesitas</li>
+          <li>Exportación CSV de tablas anuales y mensuales</li>
+          <li>Informe PDF imprimible</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-action="pro" data-arg="sidebar">Hazte Pro – <span data-pro-price>$9</span> pago único</button>
+      </div>
+      <div class="card lead-card" id="leadCard" hidden>
+        <h3>Haz crecer tu dinero, sin prisa</h3>
+        <p class="hint">Fundamentos de ahorro e inversión, calculadoras y nuevas herramientas gratis. No es asesoramiento financiero.</p>
+        <form class="lead-form" data-action="newsletter">
+          <input type="email" name="email" required placeholder="tu@correo.com" aria-label="Correo electrónico" autocomplete="email">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Suscribirme</button>
+        </form>
+        <p class="hint tiny">Sin spam. Cancela cuando quieras.</p>
+      </div>
+      <div class="ad-slot" data-slot="sidebar-2"></div>
+    </aside>
+  </div>
+
+  <div class="ad-slot horizontal" data-slot="below-tool"></div>
+</main>
+
+<section class="container hidden partners" id="partnersSection" aria-labelledby="partnersTitle">
+  <h2 id="partnersTitle">Pon a trabajar la capitalización</h2>
+  <p class="hint">Enlaces de socios: podemos ganar una comisión si abres una cuenta, sin costo extra para ti. Esto no es una recomendación para invertir.</p>
+  <div class="partners-grid" id="partnersGrid"></div>
+</section>
+
+<!-- uses:start -->
+<section class="uses container" id="popular-uses" aria-labelledby="usesTitle">
+  <h2 id="usesTitle">Formas populares de usar GrowthCalc</h2>
+  <ul class="uses-grid">
+      <li><a href="/es/compound-interest-calculator-for-retirement">Calculadora de interés compuesto para la jubilación</a></li>
+      <li><a href="/es/roth-ira-growth-calculator">Calculadora de crecimiento de Roth IRA</a></li>
+      <li><a href="/es/house-down-payment-savings-calculator">Calculadora de ahorro para el pago inicial de una casa</a></li>
+      <li><a href="/es/college-savings-calculator">Calculadora de ahorro para la universidad</a></li>
+      <li><a href="/es/how-much-will-10000-grow-in-10-years">¿Cuánto crecerán $10,000 en 10 años?</a></li>
+      <li><a href="/es/daily-compound-interest-calculator">Calculadora de interés compuesto diario</a></li>
+      <li><a href="/es/compound-interest-calculator-with-monthly-contributions">Calculadora de interés compuesto con aportes mensuales</a></li>
+      <li><a href="/es/high-yield-savings-account-calculator">Calculadora de cuenta de ahorro de alto rendimiento</a></li>
+  </ul>
+</section>
+<!-- uses:end -->
+
+<section class="content container">
+  <div class="features">
+    <div class="feature"><div class="ic">📈</div><h3>Gráfico de crecimiento en vivo</h3><p>Las barras apiladas muestran lo que aportaste frente a lo que generó la capitalización, año por año.</p></div>
+    <div class="feature"><div class="ic">🗓️</div><h3>Tablas anuales y mensuales</h3><p>Saldo inicial, aportes, interés y saldo final de cada período.</p></div>
+    <div class="feature"><div class="ic">💸</div><h3>Considera la inflación</h3><p>Activa la inflación para ver cuánto vale tu saldo futuro en dinero de hoy.</p></div>
+    <div class="feature"><div class="ic">🔗</div><h3>Compartir y guardar</h3><p>Los datos se guardan en tu navegador y se pueden compartir con un solo enlace.</p></div>
+  </div>
+
+  <h2>¿Qué es el interés compuesto?</h2>
+  <p>El interés compuesto es interés que se gana sobre el interés. Con interés simple solo obtienes rendimiento sobre el dinero que depositaste; con capitalización, cada pago de interés se suma a tu saldo y empieza a generar su propio rendimiento. En los primeros años la diferencia parece pequeña, pero como el crecimiento es exponencial se acelera: al 7% anual, un saldo se duplica aproximadamente cada diez años, así que $10,000 se convierten en unos $20,000 después de 10 años, $40,000 después de 20 y $76,000 después de 30, sin agregar un centavo.</p>
+
+  <h2>Cómo funciona esta calculadora de interés compuesto</h2>
+  <p>Para un monto único, la fórmula clásica es <strong>A = P(1 + r/n)<sup>nt</sup></strong>, donde <em>P</em> es la inversión inicial, <em>r</em> la tasa de interés anual en decimal (7% = 0.07), <em>n</em> la cantidad de períodos de capitalización por año (365 diaria, 12 mensual, 4 trimestral, 1 anual) y <em>t</em> la cantidad de años. Dividir la tasa por <em>n</em> y capitalizar <em>n·t</em> veces es lo que convierte un 7% nominal en un 7.23% efectivo con capitalización mensual.</p>
+  <p>Los aportes periódicos son una <em>serie</em> de depósitos, cada uno capitalizándose durante un tiempo distinto. En lugar de depender de una fórmula cerrada de anualidades que solo funciona cuando los aportes y la capitalización comparten el mismo calendario, GrowthCalc simula la cuenta mes a mes:</p>
+  <ol>
+    <li>Convierte la tasa nominal a una <strong>tasa mensual efectiva</strong>: r<sub>m</sub> = (1 + r/n)<sup>n/12</sup> − 1. Esto coincide exactamente con la fórmula de monto único de arriba para cualquier frecuencia de capitalización.</li>
+    <li>Cada mes, aplica esa tasa al saldo acumulado para obtener el interés del mes.</li>
+    <li>Suma tu aporte mensual <em>antes</em> de que se calcule el interés (inicio del mes) o <em>después</em> (final del mes).</li>
+    <li>Si defines un aumento anual del aporte, el monto mensual crece en ese porcentaje al inicio de cada nuevo año.</li>
+  </ol>
+  <p>Sumar esos pasos para cada mes da el saldo final, el total aportado y el interés total ganado, además de las cifras de las tablas anual y mensual. La opción de inflación divide el saldo futuro por (1 + inflación)<sup>t</sup> para expresarlo en poder de compra de hoy.</p>
+
+  <h2>Por qué empezar temprano importa tanto</h2>
+  <p>El tiempo es el dato más poderoso de la fórmula. Imagina a dos personas que invierten $300 al mes al 7% hasta los 65 años. Quien empieza a los 25 aporta $144,000 en 40 años y termina con unos <strong>$787,000</strong>. Quien empieza a los 35 aporta $108,000 en 30 años y termina con unos <strong>$366,000</strong>. Esperar diez años costó solo $36,000 en aportes, pero más de $420,000 en saldo final: la década perdida era aquella en la que los primeros depósitos se habrían capitalizado por más tiempo. Pruébalo con el control de años: la última década de cualquier plan suele generar más crecimiento que las dos primeras juntas.</p>
+
+  <h2>¿Cuánto importa la frecuencia de capitalización?</h2>
+  <p>Menos de lo que la mayoría espera. Con una tasa nominal del 7%, el rendimiento anual efectivo es 7.00% con capitalización anual, 7.12% trimestral, 7.23% mensual y 7.25% diaria. Sobre $10,000 en 20 años, esa es la diferencia entre $38,697 (anual) y $40,547 (diaria): vale la pena saberlo al comparar cuentas de ahorro, pero es mínima comparada con el efecto de aportar más o empezar unos años antes. Cambia la frecuencia en el menú desplegable para ver la brecha con tus propios números.</p>
+
+  <h2>¿Qué rendimiento deberías suponer?</h2>
+  <p>Ajusta la tasa al activo. Las cuentas de ahorro de alto rendimiento y los fondos del mercado monetario han pagado aproximadamente 3–5% en los últimos años. Los bonos con grado de inversión históricamente han rendido alrededor de 4–6%. Un índice bursátil amplio y diversificado ha rendido cerca de 10% anual en promedio durante el último siglo antes de inflación, o alrededor de <strong>7% en términos reales (ajustado por inflación)</strong>: por eso el 7% es un valor por defecto tan común. Sin embargo, los rendimientos reales en una década determinada varían enormemente, así que conviene probar un escenario prudente (por ejemplo, 5%) junto a uno optimista (9%) y planificar en torno al rango en lugar de un solo número. Las comisiones y los impuestos también reducen tu rendimiento efectivo; la forma más simple de considerarlos es bajar la tasa que ingresas.</p>
+
+  <h2>No olvides la inflación</h2>
+  <p>Un millón de dólares dentro de 30 años no comprará lo que compra un millón hoy. Con una inflación del 3%, los precios se duplican aproximadamente cada 24 años, así que $1,000,000 en 2055 tiene el poder de compra de unos $410,000 actuales. Activa la opción de inflación para ver cada saldo “en dinero de hoy”. Si prefieres pensar solo en términos reales, puedes ingresar un rendimiento real (rendimiento nominal menos inflación, por ejemplo 7% en lugar de 10%) y dejar la opción desactivada.</p>
+
+  <h2>¿Para quién es esta calculadora?</h2>
+  <ul>
+    <li><strong>Ahorristas</strong> que comparan cuentas de alto rendimiento o certificados de depósito con distintos calendarios de capitalización.</li>
+    <li><strong>Inversores de largo plazo</strong> que quieren estimar en qué podría convertirse un aporte mensual a un fondo indexado para la jubilación, el pago inicial de una casa o la educación de un hijo.</li>
+    <li><strong>Estudiantes y docentes</strong> que exploran el crecimiento exponencial, la regla del 72 y el valor del dinero en el tiempo con números reales.</li>
+    <li><strong>Cualquier persona</strong> que esté decidiendo si aumentar sus aportes ahora o más adelante: el campo “aumento anual del aporte” modela un plan que crece con tus ingresos.</li>
+  </ul>
+
+  <h2>Preguntas frecuentes</h2>
+  <div class="faq">
+    <details>
+      <summary>¿Cómo se calcula el interés compuesto?</summary>
+      <p>Para un monto único la fórmula es A = P(1 + r/n)<sup>nt</sup>, donde P es el monto inicial, r la tasa anual en decimal, n la cantidad de períodos de capitalización por año y t la cantidad de años. GrowthCalc convierte tu tasa en una tasa mensual efectiva, (1 + r/n)<sup>n/12</sup> − 1, y luego simula cada mes: aplica el interés de ese mes al saldo y suma tu aporte al inicio o al final del mes. Sumar esos pasos da el resultado exacto tanto para el depósito inicial como para la serie de aportes.</p>
+    </details>
+    <details>
+      <summary>¿Qué tasa de interés debo usar?</summary>
+      <p>Usa una tasa acorde a dónde está realmente el dinero. Una cuenta de ahorro de alto rendimiento puede pagar 3–5%, los bonos aproximadamente 4–6%, y un fondo indexado amplio de acciones históricamente ha rendido alrededor de 10% anual antes de inflación, o cerca de 7% en términos reales, en períodos largos. Muchos planificadores usan 6–8% para inversiones diversificadas de largo plazo. Si tienes dudas, prueba un escenario conservador y uno optimista y compáralos.</p>
+    </details>
+    <details>
+      <summary>¿Cuál es la diferencia entre la capitalización mensual y la anual?</summary>
+      <p>Con capitalización anual, el interés se acredita una vez al año; con capitalización mensual, cada mes se acredita una doceava parte de la tasa anual, que de inmediato empieza a generar interés propio. Cuanto más seguido se capitaliza el interés, mayor es el rendimiento anual efectivo, pero la diferencia es modesta: 7% con capitalización mensual equivale a un 7.23% efectivo anual, y la capitalización diaria da 7.25%. El tiempo que inviertes importa mucho más que la frecuencia de capitalización.</p>
+    </details>
+    <details>
+      <summary>¿Esta calculadora de interés compuesto es gratis?</summary>
+      <p>Sí. La calculadora, el gráfico, las tablas anual y mensual, el ajuste por inflación, los enlaces para compartir y la copia del resumen son completamente gratis y sin registro. Una mejora Pro opcional de pago único agrega comparación de escenarios, calculadora de objetivos, exportación CSV y un informe imprimible.</p>
+    </details>
+    <details>
+      <summary>¿La calculadora incluye impuestos o comisiones?</summary>
+      <p>No. Los resultados son cifras brutas antes de impuestos, comisiones de fondos, cargos de plataforma o costos de operación. Para aproximar su efecto, baja la tasa de interés que ingresas: por ejemplo, usa 6.5% en lugar de 7% para considerar una comisión anual del fondo de 0.5%, o redúcela aún más por impuestos sobre intereses o dividendos en una cuenta gravada.</p>
+    </details>
+    <details>
+      <summary>¿Qué es la regla del 72?</summary>
+      <p>La regla del 72 es un atajo mental para saber cuánto tarda el dinero en duplicarse: divide 72 por la tasa de interés anual en porcentaje. Al 7% da aproximadamente 10.3 años; al 10%, unos 7.2 años. La cifra exacta es ln(2) ÷ ln(1 + r), que GrowthCalc también muestra. La regla es más precisa para tasas de entre aproximadamente 6% y 10%.</p>
+    </details>
+  </div>
+
+  <p class="disclaimer"><strong>Aviso:</strong> GrowthCalc es una herramienta educativa. Las proyecciones suponen una tasa de rendimiento constante y no consideran impuestos, comisiones, volatilidad del mercado ni cambios en los aportes. Nada en este sitio es asesoramiento financiero, de inversión ni fiscal; consulta a un profesional matriculado antes de tomar decisiones.</p>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark lg" aria-hidden="true"></span>
+      <div>
+        <strong>Be Management Tools</strong>
+        <p>Una colección de herramientas gratis y privadas que funcionan por completo en tu navegador. GrowthCalc es la calculadora de interés compuesto de la familia, creada y mantenida por Be Management.</p>
+      </div>
+    </div>
+    <div class="footer-tools">
+      <strong>Más herramientas gratis</strong>
+      <ul>
+        <li><a href="https://quickinvoice-tool.vercel.app">QuickInvoice · Facturas</a></li>
+        <li><a href="https://ratecalc-tool.vercel.app">RateCalc · Tarifas freelance</a></li>
+        <li><a href="https://qrforge-tool.vercel.app">QRForge · Códigos QR</a></li>
+        <li><a href="https://squish-tool.vercel.app">Squish · Compresor de imágenes</a></li>
+        <li><a href="https://growthcalc-tool.vercel.app" class="current">GrowthCalc · Interés compuesto</a></li>
+        <li><a href="https://subnetkit-tool.vercel.app">SubnetKit · Subredes IP</a></li>
+        <li><a href="https://shotstudio-tool.vercel.app">Screenshot Studio · Mockups de capturas</a></li>
+        <li><a href="https://mockuplab-tool.vercel.app">Social Mockup Lab · Mockups de chats y posts</a></li>
+        <li><a href="https://carouselmaker-tool.vercel.app">Carousel Maker · Slides para carrusel</a></li>
+        <li><a href="https://creativeresize-tool.vercel.app">Creative Resize · Formatos para redes</a></li>
+        <li><a href="https://framelab-tool.vercel.app">Frame Lab · Marcos y mockups de fotos</a></li>
+        <li><a href="https://giveaway-tool.vercel.app">Giveaway Picker · Sorteos de Instagram</a></li>
+        <li><a href="https://iplookup-tool.vercel.app">IP Lookup · Consulta de IP</a></li>
+        <li><a href="https://sizeconverter-tool.vercel.app">Size Converter · Redimensionador de imágenes y videos</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year></span> Be Management · GrowthCalc. No es asesoramiento financiero. Solo con fines educativos.</span>
+      <span><a href="/es/privacy" data-i18n-href="/es/privacy">Privacidad</a> · <a href="/es/terms" data-i18n-href="/es/terms">Términos</a> · <a href="#" data-action="cookie-settings">Configuración de cookies</a> · <a href="https://www.bemanagement.pro" rel="noopener">bemanagement.pro</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="proModal" role="dialog" aria-modal="true" aria-labelledby="proTitle">
+  <div class="card">
+    <button class="btn btn-sm close" data-action="close-pro" aria-label="Cerrar">✕</button>
+    <h3 id="proTitle">Pásate a GrowthCalc Pro <span class="pro-badge">DE POR VIDA</span></h3>
+    <div class="price"><span id="proPrice"></span> <small>pago único</small></div>
+    <ul>
+      <li>Compara hasta 3 escenarios en un solo gráfico</li>
+      <li>Calculadora de objetivos – calcula el aporte mensual que necesitas</li>
+      <li>Exportación CSV de tablas anuales y mensuales</li>
+      <li>Informe PDF imprimible</li>
+      <li>Actualizaciones de por vida</li>
+    </ul>
+    <button class="btn btn-primary btn-block" data-action="checkout">Hazte Pro</button>
+    <p class="hint" style="margin-top:12px">¿Ya compraste? <a href="#" data-action="toggle-license">Ingresa la clave de licencia</a></p>
+    <div class="row hidden" id="licenseRow"><input id="licenseKey" placeholder="Clave de licencia" aria-label="Clave de licencia"><button class="btn" data-action="activate-license">Activar</button></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -54,6 +54,9 @@
   function esc(s) {
     return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
+  // Drops prototype-polluting keys from parsed JSON (localStorage is untrusted input).
+  function safeJSON(raw) { return JSON.parse(raw, (k, v) => (k === '__proto__' || k === 'constructor' || k === 'prototype') ? undefined : v); }
+  function isFreq(f) { return typeof f === 'string' && Object.prototype.hasOwnProperty.call(FREQ, f); }
   const fmtCache = {};
   function fmt(v, cur, decimals) {
     cur = cur || state.currency;
@@ -137,10 +140,10 @@
       monthly: num(els.monthly, 0, 1e9, 0),
       timing: els.timing.value === 'start' ? 'start' : 'end',
       rate: num(els.rate, 0, 100, 0),
-      freq: FREQ[els.freq.value] ? els.freq.value : 'monthly',
+      freq: isFreq(els.freq.value) ? els.freq.value : 'monthly',
       years: clamp(parseInt(els.years.value, 10) || 1, 1, 50),
       increase: num(els.increase, 0, 50, 0),
-      currency: els.currency.value || 'USD',
+      currency: /^[A-Z]{3}$/.test(els.currency.value) ? els.currency.value : 'USD',
       inflOn: !!els.inflToggle.checked,
       inflation: num(els.inflation, 0, 50, 0)
     };
@@ -153,12 +156,13 @@
     els.inflationField.classList.toggle('hidden', !s.inflOn);
   }
   function sanitize(obj) {
-    const s = Object.assign({}, DEFAULTS, obj || {});
+    const s = Object.assign({}, DEFAULTS);
+    if (obj && typeof obj === 'object') Object.keys(DEFAULTS).forEach((k) => { if (Object.prototype.hasOwnProperty.call(obj, k)) s[k] = obj[k]; });
     s.initial = clamp(+s.initial || 0, 0, 1e12);
     s.monthly = clamp(+s.monthly || 0, 0, 1e9);
     s.timing = s.timing === 'start' ? 'start' : 'end';
     s.rate = clamp(+s.rate || 0, 0, 100);
-    s.freq = FREQ[s.freq] ? s.freq : 'monthly';
+    s.freq = isFreq(s.freq) ? s.freq : 'monthly';
     s.years = clamp(parseInt(s.years, 10) || 1, 1, 50);
     s.increase = clamp(+s.increase || 0, 0, 50);
     s.currency = /^[A-Z]{3}$/.test(String(s.currency)) ? s.currency : 'USD';
@@ -168,13 +172,13 @@
   }
   function persist() { try { localStorage.setItem(LS_INPUTS, JSON.stringify(state)); } catch (e) { /* ignore */ } }
   function loadPersisted() {
-    try { const raw = localStorage.getItem(LS_INPUTS); return raw ? sanitize(JSON.parse(raw)) : null; } catch (e) { return null; }
+    try { const raw = localStorage.getItem(LS_INPUTS); return raw ? sanitize(safeJSON(raw)) : null; } catch (e) { return null; }
   }
   function loadScenarios() {
     try {
       const raw = localStorage.getItem(LS_SCENARIOS);
-      const arr = raw ? JSON.parse(raw) : [];
-      return Array.isArray(arr) ? arr.slice(0, MAX_SCENARIOS).map((s) => ({ name: String(s.name || 'Scenario').slice(0, 40), inputs: sanitize(s.inputs) })) : [];
+      const arr = raw ? safeJSON(raw) : [];
+      return Array.isArray(arr) ? arr.filter((s) => s && typeof s === 'object').slice(0, MAX_SCENARIOS).map((s) => ({ name: String(s.name || 'Scenario').slice(0, 40), inputs: sanitize(s.inputs) })) : [];
     } catch (e) { return []; }
   }
   function saveScenarios() { try { localStorage.setItem(LS_SCENARIOS, JSON.stringify(scenarios)); } catch (e) { /* ignore */ } }
@@ -184,7 +188,7 @@
     const q = new URLSearchParams(location.search);
     if (!q.has('p') && !q.has('m') && !q.has('r') && !q.has('y')) return null;
     const o = {};
-    Object.keys(PARAM_KEYS).forEach((k) => { if (q.has(k)) o[PARAM_KEYS[k]] = q.get(k); });
+    Object.keys(PARAM_KEYS).forEach((k) => { if (q.has(k)) o[PARAM_KEYS[k]] = String(q.get(k)).slice(0, 32); });
     return sanitize(Object.assign({}, DEFAULTS, o));
   }
   function buildShareUrl() {
@@ -464,7 +468,8 @@
 
   function csvText() {
     const r = lastResult, s = state;
-    const q = (v) => '"' + String(v).replace(/"/g, '""') + '"';
+    // Quote every text cell and neutralise spreadsheet formulas (CSV injection).
+    const q = (v) => { let t = String(v); if (/^[=+\-@\t\r]/.test(t)) t = "'" + t; return '"' + t.replace(/"/g, '""') + '"'; };
     const n2 = (v) => v.toFixed(2);
     const out = [];
     out.push(['# ' + (C.APP_NAME || 'GrowthCalc') + ' export', 'currency ' + s.currency, s.rate + '% ' + FREQ_LABEL[s.freq], s.years + ' years'].map(q).join(','));
@@ -520,12 +525,15 @@
 
   function renderPartners() {
     const links = C.AFFILIATE_LINKS || {};
-    const items = Object.keys(links).map((k) => links[k]).filter((l) => l && typeof l === 'object' && l.url);
+    const items = Object.keys(links).map((k) => links[k]).filter((l) => l && typeof l === 'object' && /^https?:\/\//i.test(String(l.url || '')));
     if (!items.length || !els.partnersSection) return;
     els.partnersGrid.innerHTML = items.map((l) =>
-      '<a class="partner card" href="' + esc(l.url) + '" target="_blank" rel="sponsored noopener" onclick="track(\'affiliate_click\',{partner:\'' + esc(l.name || '') + '\'})">' +
+      '<a class="partner card" href="' + esc(l.url) + '" target="_blank" rel="sponsored noopener noreferrer" data-partner="' + esc(l.name || '') + '">' +
       '<strong>' + esc(l.name || 'Partner') + '</strong><span>Open an investment account and put compounding to work. Opens in a new tab.</span><span class="partner-cta">Visit →</span></a>'
     ).join('');
+    // No inline handlers (blocked by CSP): track clicks with a listener.
+    els.partnersGrid.querySelectorAll('a[data-partner]').forEach((a) =>
+      a.addEventListener('click', () => { if (typeof track === 'function') track('affiliate_click', { partner: a.dataset.partner }); }));
     els.partnersSection.classList.remove('hidden');
   }
 
